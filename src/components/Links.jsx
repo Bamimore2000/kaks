@@ -8,7 +8,7 @@ const Links = ({ className }) => {
       className={twMerge("hidden md:flex gap-8 justify-between ", className)}
     >
       {links.map((link) => {
-        return <LinkItem link={link.name} />;
+        return <LinkItem key={link.name} link={link.name} />;
       })}
     </div>
   );
