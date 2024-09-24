@@ -21,14 +21,14 @@ const NavBar = () => {
       style={{
         transition: "all 500ms ease",
       }}
-      className="fixed z-30 top-0  left-0 w-full right-0 pt-10 bg-white h-[100px] flex justify-between"
+      className="fixed z-30 top-0  left-0 w-full right-0 bg-white h-[80px] flex justify-between"
     >
       <div
         style={{
           backgroundColor: isOpen ? "#F5F5F5F5" : "white",
           transition: "all 500ms ease",
         }}
-        className="container relative rounded-t-md px-2 flex justify-between pb-[20px] items-center  mx-auto max-w-[1300px] w-[95%]  "
+        className="container relative rounded-t-md px-2 flex justify-between items-center  mx-auto max-w-[1300px] w-[95%]  "
       >
         <div className="logo flex justify-between gap-2 items-center">
           {/* TODO: KAKS LOGO MUST BE HERE */}
