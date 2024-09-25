@@ -21,7 +21,7 @@ const NavBar = () => {
       style={{
         transition: "all 500ms ease",
       }}
-      className="fixed z-30 top-0  left-0 w-full right-0 bg-white h-[80px] flex justify-between"
+      className="fixed nav-bar z-30 top-0  left-0 w-full right-0 bg-white h-[80px] flex justify-between"
     >
       <div
         style={{

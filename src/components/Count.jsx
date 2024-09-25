@@ -71,13 +71,13 @@ const MultiCounter = () => {
 
   return (
     <section ref={ref} className="multi-counter w-full section-main">
-      <div className="wrapper grid grid-cols-2 gap-y-6 md:grid-cols-4 mx-auto w-[85%] max-w-[940px]">
+      <div className="wrapper grid grid-cols-2 gap-y-6 md:grid-cols-4 mx-auto w-[85%] max-w-[58.75rem]">
         {counters.map((counter, index) => (
           <div
             key={index}
             className="counter-item justify-center text-center flex flex-col gap-0"
           >
-            <span className="number text-[25px]  md:text-[30px] font-bold text-[#141414]">
+            <span className="number text-[1.5625rem]  md:text-[1.875rem] font-bold text-[#141414]">
               {counts[index] || counter.target}
               {counter.label === "Success Rate" && "%"}
             </span>
