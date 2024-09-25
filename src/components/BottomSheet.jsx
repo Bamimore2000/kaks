@@ -41,7 +41,7 @@ const BottomSheet = ({ children, height }) => {
   return (
     <>
       {openSheet && (
-        <div className="fixed top-0 left-0 z-50">
+        <div className="fixed  top-0 left-0 z-50">
           <motion.div
             ref={scope}
             initial={{ opacity: 0 }}

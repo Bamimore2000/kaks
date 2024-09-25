@@ -10,7 +10,7 @@ const NavMenu = ({ isOpen }) => {
         height: isOpen ? "220px" : "0",
         transition: "all 500ms ease",
       }}
-      className="hamburger-menu px-3 md:hidden overflow-hidden text-black absolute w-full rounded-b-md  bg-[#F5F5F5F5] h-[200px] top-[60px]"
+      className="hamburger-menu px-3 md:hidden overflow-hidden text-black absolute w-full rounded-b-md  bg-[#F5F5F5F5] h-[200px] top-[80px]"
     >
       <Links className={"flex flex-col gap-3 text-[18px] pt-2"} />
       <Book className={"justify-center mt-3"} />

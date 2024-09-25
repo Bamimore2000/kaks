@@ -19,7 +19,7 @@ const Page = () => {
     <ToggleProvider>
       <main className="max-w-full">
         <NavBar />
-        <BottomSheet height="30dvh">
+        <BottomSheet height="20svh">
           <ContactContent />
         </BottomSheet>
         <ImageGrid images={imageData} />

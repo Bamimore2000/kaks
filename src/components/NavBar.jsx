@@ -42,12 +42,14 @@ const NavBar = () => {
         </div>
         <Links />
         <div className="book-hamburger flex justify-between gap-5 items-center">
-          {!isOpen && <Book className={"transition-all"} />}
+          {!isOpen && (
+            <Book className={"transition-all text-white text-[13px]"} />
+          )}
 
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         {isOpen && (
-          <div className="absolute opacity-65 -bottom-[10px] bg-gray-600 mx-auto w-[96%] h-[1px] "></div>
+          <div className="absolute opacity-65 bottom-[0px] bg-gray-600 mx-auto w-[96%] h-[1px] "></div>
         )}
 
         <NavMenu isOpen={isOpen} />

@@ -3,7 +3,7 @@ import Book from "./Book";
 
 const HeroItem = () => {
   return (
-    <div className="absolute inset-0 z-20 grid place-items-center h-full w-full">
+    <div className="absolute  inset-0 z-20 grid place-items-center h-full w-full">
       {/* This is your background image component */}
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#91661c]"></div>
@@ -20,7 +20,7 @@ const HeroItem = () => {
             consulting services across residential, industrial, commercial, and
             government projects
           </p>
-          <Book className="bg-[#FFCB05] gap-1 mt-6 shadow-lg shadow-yellow-500 rounded-sm text-black py-3 px-6 w-[max-content] mx-auto" />
+          <Book className="bg-[#FFCB05] gap-1 mt-6 shadow-md shadow-yellow-500 rounded-sm text-black py-3 px-6 w-[max-content] mx-auto" />
           <div className="lower-details absolute bottom-5 left-1/2 -translate-x-1/2 text-white">
             <p className="tracking-normal text-[10px]">
               {" "}

@@ -78,7 +78,7 @@ const ImageGrid = ({ images }) => {
 
   return (
     <div
-      style={{ height: "calc(100dvh - 80px)", overflow: "hidden" }}
+      style={{ height: "calc(100svh - 80px)", overflow: "hidden" }}
       className="grid z-20 overflow-hidden relative px-3 bg-black grid-cols-3 md:grid-cols-4 gap-2 mt-[80px]" // 4 columns on mobile, 5 on larger screens
     >
       <HeroItem />
