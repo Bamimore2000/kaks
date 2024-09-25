@@ -6,7 +6,7 @@ const HeroItem = () => {
     <div className=" absolute z-20 grid place-items-center h-full w-full">
       {/* This is your background image component */}
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#8d6a2e]"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#91661c]"></div>
 
       {/* Content wrapper */}
       <div className="content-wrapper w-full relative z-5  h-full grid place-items-center">
