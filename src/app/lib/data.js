@@ -31,6 +31,18 @@ export const contacts = [
   },
 ];
 
+export const sectionsName = [
+  {
+    name: "Construction",
+  },
+  {
+    name: "Projects",
+  },
+  { name: "Onsite" },
+  { name: "Interior" },
+  { name: "Services" },
+];
+
 // const imageMaker = (url) => {
 //   let array = [];
 //   for (let index = 0; index < 41; index++) {

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import HeroItem from "./HeroItem";
+import Image from "next/image";
 
 // Function to shuffle an array
 const shuffleArray = (array) => {
@@ -62,9 +63,9 @@ const ImageGrid = ({ images }) => {
       observer.observe(col);
     });
 
-    return () => {
-      columns.forEach((col) => observer.unobserve(col)); // Cleanup observer on unmount
-    };
+    // return () => {
+    //   columns.forEach((col) => observer.unobserve(col)); // Cleanup observer on unmount
+    // };
   }, []);
 
   // Function to slice and duplicate images for seamless scrolling
@@ -89,13 +90,15 @@ const ImageGrid = ({ images }) => {
           className={`flex flex-col gap-2 h-full`}
         >
           {getColumnImages(i).map((image, idx) => (
-            <img
-              key={idx}
-              src={image}
-              alt={`Image ${idx}`}
-              className="w-full h-[150px] md:h-[300px] object-cover"
-              loading="lazy"
-            />
+            <div key={idx} className="w-full relative h-[150px] md:h-[300px]">
+              <Image
+                layout="fill"
+                objectFit="cover"
+                src={image}
+                alt={`Image ${idx}`}
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
       ))}
@@ -104,6 +107,8 @@ const ImageGrid = ({ images }) => {
 };
 
 export default ImageGrid;
+
+// TOD0: dynamically determine the viewport for the images
 
 // import React, { useEffect, useRef } from "react";
 // import { gsap } from "gsap";
