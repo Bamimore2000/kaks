@@ -19,7 +19,7 @@ const About = () => {
           About us
         </h3>
         <p className="font-semi-bold text-[16px] mb-6">
-          Here's what some of our clients have to say about Kaks Multiprofile
+          Here is what some of our clients have to say about Kaks Multiprofile
           Services. – and more time running your business.
         </p>
       </div>
@@ -29,6 +29,7 @@ const About = () => {
           {Array.from({ length: 4 }).map((_, index) => {
             return (
               <div
+                key={index}
                 style={{
                   gridRowStart: index + 2,
                 }}
@@ -54,9 +55,12 @@ const About = () => {
           <div className="absolute top-0 bottom-0 hidden col-start-3   w-px bg-black/20 md:block"></div>
 
           {/* mapping out all details */}
-          {abouts.map((about) => {
+          {abouts.map((about, index) => {
             return (
-              <div className="flex flex-col gap-y-6 px-2 py-10 md:p-6 lg:p-8 xl:p-12">
+              <div
+                key={index}
+                className="flex flex-col gap-y-6 px-2 py-10 md:p-6 lg:p-8 xl:p-12"
+              >
                 <Image
                   height={32}
                   width={24}
