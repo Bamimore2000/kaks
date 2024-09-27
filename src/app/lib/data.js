@@ -78,3 +78,75 @@ export const imageData = [
   "https://utfs.io/f/gzs3u2midcSLXiCZVDzcP81AqQHmxXF7jKdICne4GDafikto",
   "https://utfs.io/f/gzs3u2midcSLePFsfeCngob15pYBZHhGqu8tQ9E7jWvFMDVC",
 ];
+
+export const abouts = [
+  {
+    icon: "https://utfs.io/f/gzs3u2midcSLGzTxSKFFrCDmlITEWvzi3VBNOL92Y7SywAZ4",
+    heading: "Construction",
+    details:
+      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+  },
+  {
+    icon: "https://utfs.io/f/gzs3u2midcSLGzTxSKFFrCDmlITEWvzi3VBNOL92Y7SywAZ4",
+    heading: "General Contractor",
+    details:
+      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+  },
+  {
+    icon: "https://utfs.io/f/gzs3u2midcSLGzTxSKFFrCDmlITEWvzi3VBNOL92Y7SywAZ4",
+    heading: "Water Engineering",
+    details:
+      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+  },
+  {
+    icon: "https://utfs.io/f/gzs3u2midcSLGzTxSKFFrCDmlITEWvzi3VBNOL92Y7SywAZ4",
+    heading: "Real Estate Consultant",
+    details:
+      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+  },
+  {
+    icon: "https://utfs.io/f/gzs3u2midcSLGzTxSKFFrCDmlITEWvzi3VBNOL92Y7SywAZ4",
+    heading: "Real Estate Consultant",
+    details:
+      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+  },
+];
+
+export const testimonials = [
+  {
+    name: " Maya K., Operations Lead",
+    role: "Director",
+    comment:
+      "As a team, we were able to streamline our process like never before. It's a game-changer.”",
+  },
+  {
+    name: "Mr. Bayo",
+    role: "Director",
+    comment:
+      "We had been struggling with inefficient workflows for months, constantly between tools that didn't communicate well with each other.Then we found this platform, and it was a breath of fresh air. Not only did it integrate perfectly with our existing tech stack.",
+  },
+  {
+    name: "Anna B,",
+    role: "Sales Rep",
+    comment:
+      "This solution enabled us to scale quickly. We felt supported at every step of the way",
+  },
+  {
+    name: "Tunde Anifowose",
+    role: "CEO",
+    comment:
+      "I couldn't be happier with how everything's worked out. The impact on our team's efficiency was immediate.",
+  },
+  {
+    name: "Tobi Akoni",
+    role: "CEO",
+    comment:
+      "This solution enabled us to scale quickly. We felt supported at every step of the way",
+  },
+  {
+    name: "Segun Toba",
+    role: "Director",
+    comment:
+      "We had been struggling with inefficient workflows for months, constantly switching between tools that didn't communicate well with each other. Then we found this platform, and it was a breath of fresh air. Not only did it integrate perfectly with our existing tech stack.",
+  },
+];

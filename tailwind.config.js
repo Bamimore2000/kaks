@@ -5,23 +5,14 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "utfs.io",
-        port: "",
-        pathname: "/my-bucket/**",
-      },
-    ],
-  },
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      screens: {
+        xs: "320px", // Custom size for 320px
+        xsm: "480px", // Custom size for 480px
+        xmd: "540px", // Custom size for 520px
       },
     },
   },
-  plugins: [],
+  plugins: [], // Move plugins outside the theme object
 };

@@ -16,7 +16,7 @@ body {
   @apply mt-6 sm:mt-8 md:mt-12 mb-10 sm:mb-12 md:mb-16;
 }
 .section-header {
-  @apply text-center text-3xl sm:text-4xl tracking-wide my-2 font-semibold md:font-bold;
+  @apply text-center text-3xl sm:text-4xl tracking-wide my-2 font-bold md:font-bold;
 }
 /*  */
 
@@ -84,6 +84,34 @@ body {
   /* margin-left: calc(var(--slide-spacing) * -1); */
 }
 
+@media screen and (min-width: 29.25rem) {
+  .about-carousel {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 43.75rem) {
+  .about-carousel {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 50rem) {
+  .about-carousel {
+    width: 50%;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 53.125rem) {
+  .about-carousel {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 62.5rem) {
+  .about-carousel {
+    width: 35%;
+  }
+}
+/*  */
 .embla__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 60%;
