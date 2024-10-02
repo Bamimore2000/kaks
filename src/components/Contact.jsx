@@ -6,7 +6,7 @@ const Contact = () => {
     <section className="w-[92%] max-w-[1300px] py-10 mx-auto">
       <div className="contact-text mb-10">
         <h2 className="section-header">Contact</h2>
-        <h4 className="text-center ">
+        <h4 className="text-center max-w-[400px] mx-auto text-[#545454]">
           {" "}
           Give us a call or send us an email and we will get back to you as soon
           as possible

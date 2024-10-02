@@ -20,15 +20,15 @@ const UsefulLinks = () => {
   };
   return (
     <article>
-      <h4 className="text-white text-base md:text-lg md:font-semibold mb-3">
+      <h4 className="text-white tracking-wider text-xs md:text-sm md:font-semibold mb-[8px] md:mb-[12px]">
         Useful Links
       </h4>
-      <div className="sections flex flex-col gap-2">
+      <div className="sections flex flex-col gap-3">
         {links.map((section) => {
           return (
             <a
               key={section.name}
-              className="text-xs md:text-base text-[#A8A8A8] cursor-pointer font-thin"
+              className="text-xs md:text-sm text-[#A8A8A8] cursor-pointer font-semi-bold"
               onClick={(e) => {
                 handleClick(e, section.name);
               }}

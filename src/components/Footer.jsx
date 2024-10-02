@@ -12,7 +12,11 @@ const Footer = () => {
           <div className="links flex gap-2 text-white">
             {socialLinks.map((link) => {
               return (
-                <a key={link.link} className="flex gap-2" href={link.link}>
+                <a
+                  key={link.link}
+                  className="flex gap-2 text-[#f5f5f5]"
+                  href={link.link}
+                >
                   <span className="font-thin text-sm">{link.name}</span>
                   <MdArrowOutward />
                 </a>
@@ -21,13 +25,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-items relative pt-6 pb-6 mt-4 grid grid-cols-2 md:grid-cols-3 text-white">
-          <div className="left-0 absolute bg-[#A8A8A8] w-px -top-2 -bottom-2 "></div>
-          <div className="col-start-2 absolute bg-[#A8A8A8] w-[0.5px] top-0 bottom-0 "></div>
-          <div className="col-start-3 hidden md:block absolute bg-[#A8A8A8] w-[0.5px] top-0 bottom-0 "></div>
-          <div className="right-0 absolute bg-[#A8A8A8] w-px -top-2 -bottom-2 "></div>
-          <div className="top-0 absolute -left-2 -right-2 h-px bg-[#A8A8A8]"></div>
-          <div className="bottom-0 absolute -left-2 -right-2 h-px bg-[#A8A8A8]"></div>
-          <div className="get-things-done  p-4 md:p-14">
+          <div className="left-0 absolute bg-[#fbfbfb] opacity-40 w-px -top-2 -bottom-2 "></div>
+          <div className="col-start-2 absolute bg-[#fbfbfb] opacity-40 w-[0.5px] top-0 bottom-0 "></div>
+          <div className="col-start-3 hidden md:block absolute opacity-40 bg-[#fbfbfb] w-[0.5px] top-0 bottom-0 "></div>
+          <div className="right-0 absolute bg-[#fbfbfb] opacity-40 w-px -top-2 -bottom-2 "></div>
+          <div className="top-0 absolute -left-2 -right-2 opacity-40 h-px bg-[#fbfbfb]"></div>
+          <div className="bottom-0 absolute -left-2 -right-2 opacity-40 h-px bg-[#fbfbfb]"></div>
+          <div className="get-things-done  p-4 md:p-8">
             <div className="done">
               <h3 className="text-2xl md:text-4xl mb-6 font-semibold">
                 We get things done!
@@ -37,12 +41,12 @@ const Footer = () => {
                   <div className="address font-thin  flex gap-1 items-center">
                     <a
                       href="https://maps.app.goo.gl/yNtfFdcws9xKjd7z9"
-                      className="first underline"
+                      className="first underline tracking-wide"
                     >
                       46, White house Agiliti Aina road, <br /> Mile 12 Lagos,
                       Nigeria
                     </a>
-                    <MdArrowOutward />
+                    <MdArrowOutward size={20} />
                   </div>
                   <div className="phone-email font-thin flex gap-1 items-center">
                     <div className="first underline">
@@ -53,7 +57,7 @@ const Footer = () => {
                         Email:md@kaksgroup.com
                       </a>
                     </div>
-                    <MdArrowOutward />
+                    <MdArrowOutward size={20} />
                   </div>
                 </div>
 
@@ -63,10 +67,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="useful-links pt-4 md:pt-[10%] flex justify-center md:items-start">
+          <div className="useful-links pt-4 md:pt-8 flex justify-center md:items-start">
             <UsefulLinks />
           </div>
-          <div className="our-services md:pt-[10%] hidden justify-center md:flex md:items-start">
+          <div className="our-services md:pt-8 hidden justify-center md:flex md:items-start">
             <OurServices />
           </div>
         </div>

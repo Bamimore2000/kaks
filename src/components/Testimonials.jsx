@@ -13,7 +13,7 @@ const Testimonials = () => {
 
   const updateMedia = () => {
     if (typeof window !== "undefined") {
-      setIsWideScreen(window.innerWidth >= 540);
+      setIsWideScreen(window.innerWidth >= 768);
     }
   };
 
@@ -33,7 +33,7 @@ const Testimonials = () => {
       </h5>
 
       {/* Masonry grid */}
-      <ResponsiveMasonry columnsCountBreakPoints={{ 100: 1, 540: 2, 768: 3 }}>
+      <ResponsiveMasonry columnsCountBreakPoints={{ 100: 1, 768: 3 }}>
         <Masonry>
           {testimonials
             .slice(0, showMore || isWideScreen ? testimonials.length : 3)
@@ -47,15 +47,15 @@ const Testimonials = () => {
       {!isWideScreen && (
         <div className="relative mt-4">
           <div
-            className={`blurred-overlay backdrop-blur-xl bg-gradient-to-b from-transparent via-white/60 to-white/100 absolute inset-x-0 bottom-0 h-[150px] transition-all duration-300 ease-in-out ${
+            className={`blurred-overlay bg-gradient-to-b from-transparent via-white/90 to-white/100 absolute inset-x-0 bottom-0 h-[150px] transition-all duration-300 ease-in-out ${
               showMore ? "opacity-0 h-0" : "opacity-100 h-[150px]"
             }`}
           />
           <button
             onClick={handleToggleShowMore}
-            className="relative z-10 block mx-auto mt-3 text-[#A46803] hover:underline"
+            className="relative z-10 underline block mx-auto mt-3 text-[#A46803] hover:underline"
           >
-            {showMore ? "Show Less" : "Show More"}
+            {showMore ? "View Less" : "View More"}
           </button>
         </div>
       )}

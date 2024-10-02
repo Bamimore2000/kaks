@@ -70,7 +70,7 @@ const MultiCounter = () => {
   };
 
   return (
-    <section ref={ref} className="multi-counter w-full section-main">
+    <section ref={ref} className="multi-counter w-full py-8">
       <div className="wrapper grid grid-cols-2 gap-y-6 md:grid-cols-4 mx-auto w-[85%] max-w-[58.75rem]">
         {counters.map((counter, index) => (
           <div

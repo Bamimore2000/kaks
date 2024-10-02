@@ -24,7 +24,7 @@ const OurServices = ({ className }) => {
   };
   return (
     <div className={twMerge("flex flex-col text-white", className)}>
-      <h4 className="text-white text-base md:text-lg mb-2 md:font-semibold">
+      <h4 className="text-white text-xs tracking-wider md:text-sm  md:font-semibold mb-[8px] md:mb-[12px]">
         Our Services
       </h4>
       <div className="sections flex flex-col gap-2">
@@ -32,7 +32,7 @@ const OurServices = ({ className }) => {
           return (
             <a
               key={section.name}
-              className="text-xs cursor-pointer text-[#A8A8A8] md:text-base font-thin"
+              className="text-xs cursor-pointer text-[#A8A8A8] md:text-sm font-thin"
               onClick={(e) => {
                 // TODOs
                 // scroll to the section for showcase
