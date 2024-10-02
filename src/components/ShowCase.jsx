@@ -132,22 +132,22 @@ const EmblaCarousel = (props) => {
       </div>
 
       <div className="embla__controls mx-auto w-[92%] max-w-[1300px]">
-        <div className="embla__buttons">
+        <div className="embla__buttons ">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
 
         {/* Play/Pause Button */}
-        <div className="buttons-paginations flex bg-[#e4e2e2] px-3  rounded-full h-[45px]">
+        <div className="buttons-paginations flex bg-[#f5f5f5] px-3  rounded-full h-[45px]">
           <button
             className="embla__play"
             onClick={toggleAutoplay}
             type="button"
           >
             {isPlaying ? (
-              <CiPause1 color="gray" size={30} />
+              <CiPause1 color="black" size={25} />
             ) : (
-              <IoPlayOutline color="gray" size={30} />
+              <IoPlayOutline color="black" size={25} />
             )}
           </button>
         </div>

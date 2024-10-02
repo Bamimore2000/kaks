@@ -41,7 +41,7 @@ export const PrevButton = (props) => {
 
   return (
     <button
-      className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-300 border-0 cursor-pointer focus:outline-none"
+      className="flex items-center justify-center w-12 h-12 rounded-full bg-[#f5f5f5] border-0 cursor-pointer focus:outline-none"
       type="button"
       {...restProps}
     >
@@ -61,7 +61,7 @@ export const NextButton = (props) => {
 
   return (
     <button
-      className="flex items-center justify-center w-9 h-9 rounded-full bg-gray-300 border-0 cursor-pointer focus:outline-none"
+      className="flex items-center justify-center w-12 h-12 rounded-full bg-[#f5f5f5] border-0 cursor-pointer focus:outline-none"
       type="button"
       {...restProps}
     >

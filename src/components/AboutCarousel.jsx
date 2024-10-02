@@ -85,16 +85,16 @@ const AboutCarousel = (props) => {
           />
         </div>
 
-        <div className="flex bg-gray-300 px-3  rounded-full h-[45px]">
+        <div className="flex bg-[#f5f5f5] px-3  rounded-full h-[45px]">
           <button
             className=" text-white rounded-lg focus:outline-none "
             onClick={toggleAutoplay}
             type="button"
           >
             {isPlaying ? (
-              <CiPause1 color="gray" size={30} />
+              <CiPause1 color="black" size={25} />
             ) : (
-              <IoPlayOutline color="gray" size={30} />
+              <IoPlayOutline color="black" size={25} />
             )}
           </button>
         </div>

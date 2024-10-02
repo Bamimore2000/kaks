@@ -24,7 +24,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="mt-10 relative py-5 w-[92%] max-w-[1300px] mx-auto">
+    <div className="relative mt-10 py-5 w-[92%] max-w-[1300px] mx-auto">
       <h4 className="text-[#565FAD] text-lg mb-2 font-semi-bold">
         Testimonials
       </h4>
@@ -43,11 +43,17 @@ const Testimonials = () => {
         </Masonry>
       </ResponsiveMasonry>
 
+      {/* Blurred clouding effect with gradient */}
       {!isWideScreen && (
-        <div className="button-wrapper backdrop-blur-xl bg-white/30  absolute bottom-7 h-9 w-full text-center">
+        <div className="relative mt-4">
+          <div
+            className={`blurred-overlay backdrop-blur-xl bg-gradient-to-b from-transparent via-white/60 to-white/100 absolute inset-x-0 bottom-0 h-[150px] transition-all duration-300 ease-in-out ${
+              showMore ? "opacity-0 h-0" : "opacity-100 h-[150px]"
+            }`}
+          />
           <button
             onClick={handleToggleShowMore}
-            className="mt-4 text-blue-500 hover:underline"
+            className="relative z-10 block mx-auto mt-3 text-[#A46803] hover:underline"
           >
             {showMore ? "Show Less" : "Show More"}
           </button>
