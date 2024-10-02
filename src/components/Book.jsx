@@ -5,12 +5,15 @@ import { useState } from "react";
 import { BottomSheet } from "./BottomSheet";
 import { useToggle } from "./contexts/toggleContexts";
 
-const Book = ({ className }) => {
+const Book = ({ isOpen, setIsOpen, className }) => {
   const { openSheet, setOpenSheet } = useToggle();
   return (
     <button
       onClick={() => {
         setOpenSheet(true);
+        if (isOpen && setIsOpen) {
+          setIsOpen(false);
+        }
       }}
       className={twMerge(
         "book text-white rounded-md flex gap-2 items-center bg-[#292929] p-2",

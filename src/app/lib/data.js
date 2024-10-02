@@ -1,5 +1,8 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { RxEnvelopeClosed } from "react-icons/rx";
+import { IoMapOutline } from "react-icons/io5";
+import { MdLocalPhone, MdOutlineLocalPhone } from "react-icons/md";
 
 export const links = [
   {
@@ -150,3 +153,78 @@ export const testimonials = [
       "We had been struggling with inefficient workflows for months, constantly switching between tools that didn't communicate well with each other. Then we found this platform, and it was a breath of fresh air. Not only did it integrate perfectly with our existing tech stack.",
   },
 ];
+
+export const contactCards = [
+  {
+    icon: <RxEnvelopeClosed size={35} color="#A46803" />,
+    secondary: "Email Us",
+    text: "md@kaksgroup.com",
+    link: "mailto:md@kaksgroup.com",
+  },
+  {
+    icon: <IoMapOutline size={35} color="#A46803" />,
+    secondary: "Our Address",
+    text: "28, County Estate, Pen Cinema, Ogba Ikeja, Lagos, Nigeria.",
+    link: "https://maps.app.goo.gl/yNtfFdcws9xKjd7z9",
+  },
+  {
+    icon: <MdOutlineLocalPhone size={35} color="#A46803" />,
+    text: "+2348161179370",
+    secondary: "Call Us",
+    link: "+2348161179370",
+  },
+];
+
+export const faq = [
+  {
+    question: "What services do you offer?",
+    answer:
+      "We offer a range of services including design, development, consultation, and maintenance for projects of various scales.",
+  },
+  {
+    question: "How long will my project take to complete?",
+    answer:
+      "The duration of a project depends on its complexity. After reviewing the details, we will provide an estimated timeline.",
+  },
+  {
+    question: "Do you provide free estimates?",
+    answer:
+      "Yes, we offer free estimates after an initial consultation to understand the scope of your project.",
+  },
+  {
+    question: "Are you licensed and insured?",
+    answer:
+      "Yes, we are fully licensed and insured to carry out all the services we offer.",
+  },
+  {
+    question: "Can I make changes to the project after it starts?",
+    answer:
+      "Yes, changes can be made during the project, but depending on the scope, this may affect the timeline and cost.",
+  },
+  {
+    question: "How do I get started on a project with you?",
+    answer:
+      "You can get started by contacting us through our website or sending us a message to schedule a consultation.",
+  },
+];
+
+export const socialLinks = [
+  {
+    name: "Facebook",
+    link: "https://facebook.com/yourpage",
+  },
+  {
+    name: "WhatsApp",
+    link: "https://wa.me/1234567890",
+  },
+  {
+    name: "Instagram",
+    link: "https://instagram.com/yourprofile",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/yourprofile",
+  },
+];
+
+console.log(socialLinks);

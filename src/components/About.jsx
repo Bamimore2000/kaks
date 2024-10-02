@@ -8,8 +8,8 @@ import Testimonials from "./Testimonials";
 const About = () => {
   const OPTIONS = { loop: true };
   return (
-    <section className="section-name w-[92%] max-w-[1300px] mx-auto">
-      <div className="first-description">
+    <section id="About" className="section-name py-12">
+      <div className="first-description w-[92%] max-w-[1300px] mx-auto">
         <h3
           style={{
             textAlign: "left",
@@ -24,7 +24,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="details grid relative md:grid-cols-3">
+      <div className="details grid relative md:grid-cols-3 w-[92%] max-w-[1300px] mx-auto">
         <>
           {Array.from({ length: 4 }).map((_, index) => {
             return (
@@ -78,8 +78,11 @@ const About = () => {
           })}
         </>
       </div>
-      <Book className="w-max mt-8" />
-      <div className="meet-details mt-12 flex md:items-center flex-col md:flex-row md:justify-between gap-y-5">
+      <div className="button-container w-[92%] max-w-[1300px] mx-auto">
+        <Book className="mt-8" />
+      </div>
+
+      <div className="meet-details mt-12 flex md:items-center flex-col md:flex-row md:justify-between gap-y-5 w-[92%] max-w-[1300px] mx-auto">
         <div className="first-col md:flex-auto">
           <h4 className="mb-4 text-xl italic font-medium md:text2xl">
             Meet the CEO & staffs on duty

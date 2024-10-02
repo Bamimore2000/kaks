@@ -59,7 +59,7 @@ const AboutCarousel = (props) => {
   }, [emblaApi]);
 
   return (
-    <section className="max-w-[1300px] mt-8 mx-auto">
+    <section className="max-w-[1300px] w-full mt-8 mx-auto">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex -ml-4">
           {slides.map((index) => (

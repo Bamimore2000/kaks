@@ -5,12 +5,14 @@ import ImageHeader from "./ImageHeader";
 import { sectionsName } from "@/app/lib/data";
 import ShowCase from "./ShowCase";
 import { imageData } from "@/app/lib/data";
+import { useToggle } from "./contexts/toggleContexts";
 
 const Portfolio = () => {
-  const [current, setCurrent] = useState(sectionsName[0].name);
+  const { current, setCurrent } = useToggle();
+  // const [current, setCurrent] = useState(sectionsName[0].name);
   const OPTIONS = { loop: true };
   return (
-    <section className="section-main">
+    <section id="Portfolio" className="section-main py-12">
       <p className="text-center mt-4 text-gray-400 text-[10px] font-mono">
         A collection of my best works
       </p>

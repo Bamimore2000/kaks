@@ -24,11 +24,11 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="mt-10 relative py-5">
+    <div className="mt-10 relative py-5 w-[92%] max-w-[1300px] mx-auto">
       <h4 className="text-[#565FAD] text-lg mb-2 font-semi-bold">
         Testimonials
       </h4>
-      <h5 className="text-3xl font-bold">
+      <h5 className="text-[26px] font-bold">
         Exceptional service & <br /> top-notch craftsmanship!
       </h5>
 

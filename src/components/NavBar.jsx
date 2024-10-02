@@ -52,7 +52,7 @@ const NavBar = () => {
           <div className="absolute opacity-65 bottom-[0px] bg-gray-600 mx-auto w-[96%] h-[1px] "></div>
         )}
 
-        <NavMenu isOpen={isOpen} />
+        <NavMenu setIsOpen={setIsOpen} isOpen={isOpen} />
       </div>
     </nav>
   );
