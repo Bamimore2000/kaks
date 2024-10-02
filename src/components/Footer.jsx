@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="links flex gap-2 text-white">
             {socialLinks.map((link) => {
               return (
-                <a className="flex gap-2" href={link.link}>
+                <a key={link.link} className="flex gap-2" href={link.link}>
                   <span className="font-thin text-sm">{link.name}</span>
                   <MdArrowOutward />
                 </a>
