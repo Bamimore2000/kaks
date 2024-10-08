@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import { FaTimes } from "react-icons/fa";
+
 import { IoPlayOutline } from "react-icons/io5";
 import { CiPause1 } from "react-icons/ci";
 import useEmblaCarousel from "embla-carousel-react";
@@ -12,13 +14,15 @@ import {
 } from "./EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import Image from "next/image";
+import ImageComponent from "./ImageComponent";
 
-const TWEEN_FACTOR_BASE = 0.52;
+const TWEEN_FACTOR_BASE = 0.3;
 
 const numberWithinRange = (number, min, max) =>
   Math.min(Math.max(number, min), max);
 
 const EmblaCarousel = (props) => {
+  const [openLarge, setOpenLarge] = useState(false);
   // A use effect to fecth slides based on the button clicked
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
@@ -48,40 +52,52 @@ const EmblaCarousel = (props) => {
     tweenFactor.current = TWEEN_FACTOR_BASE * emblaApi.scrollSnapList().length;
   }, []);
 
-  const tweenScale = useCallback((emblaApi, eventName) => {
-    const engine = emblaApi.internalEngine();
-    const scrollProgress = emblaApi.scrollProgress();
-    const slidesInView = emblaApi.slidesInView();
-    const isScrollEvent = eventName === "scroll";
+  useEffect(() => {
+    if (openLarge && typeof window !== "undefined") {
+      window.document.body.style.overflow = "hidden";
+    } else {
+      window.document.body.style.overflow = "visible";
+    }
+  }, [openLarge]);
 
-    emblaApi.scrollSnapList().forEach((scrollSnap, snapIndex) => {
-      let diffToTarget = scrollSnap - scrollProgress;
-      const slidesInSnap = engine.slideRegistry[snapIndex];
+  const tweenScale = useCallback(
+    (emblaApi, eventName) => {
+      const engine = emblaApi.internalEngine();
+      const scrollProgress = emblaApi.scrollProgress();
+      const slidesInView = emblaApi.slidesInView();
+      const isScrollEvent = eventName === "scroll";
 
-      slidesInSnap.forEach((slideIndex) => {
-        if (isScrollEvent && !slidesInView.includes(slideIndex)) return;
+      emblaApi.scrollSnapList().forEach((scrollSnap, snapIndex) => {
+        let diffToTarget = scrollSnap - scrollProgress;
+        const slidesInSnap = engine.slideRegistry[snapIndex];
 
-        const scale = 0.75; // Default scale for slides
-        const activeSlideScale = 1.2; // Scale for the active slide
-        const adjacentSlideScale = 0.85; // Scale for adjacent slides
+        slidesInSnap.forEach((slideIndex) => {
+          if (isScrollEvent && !slidesInView.includes(slideIndex)) return;
 
-        if (slideIndex === emblaApi.selectedScrollSnap()) {
-          tweenNodes.current[
-            slideIndex
-          ].style.transform = `scale(${activeSlideScale})`;
-        } else if (
-          slideIndex === emblaApi.selectedScrollSnap() - 1 ||
-          slideIndex === emblaApi.selectedScrollSnap() + 1
-        ) {
-          tweenNodes.current[
-            slideIndex
-          ].style.transform = `scale(${adjacentSlideScale})`;
-        } else {
-          tweenNodes.current[slideIndex].style.transform = `scale(${scale})`;
-        }
+          const scale = 0.75; // Default scale for slides
+          // TODO: set back to 1.2
+          const activeSlideScale = openLarge ? 1 : 1.2; // Scale for the active slide
+          const adjacentSlideScale = 0.85; // Scale for adjacent slides
+
+          if (slideIndex === emblaApi.selectedScrollSnap()) {
+            tweenNodes.current[
+              slideIndex
+            ].style.transform = `scale(${activeSlideScale})`;
+          } else if (
+            slideIndex === emblaApi.selectedScrollSnap() - 1 ||
+            slideIndex === emblaApi.selectedScrollSnap() + 1
+          ) {
+            tweenNodes.current[
+              slideIndex
+            ].style.transform = `scale(${adjacentSlideScale})`;
+          } else {
+            tweenNodes.current[slideIndex].style.transform = `scale(${scale})`;
+          }
+        });
       });
-    });
-  }, []);
+    },
+    [openLarge]
+  );
 
   const toggleAutoplay = useCallback(() => {
     const autoplay = emblaApi?.plugins()?.autoplay;
@@ -112,27 +128,64 @@ const EmblaCarousel = (props) => {
         .on("autoplay:play", () => setIsPlaying(true))
         .on("autoplay:stop", () => setIsPlaying(false));
     }
-  }, [emblaApi, tweenScale]);
+  }, [emblaApi, tweenScale, openLarge]);
 
   return (
-    <div className="embla">
+    <div
+      onClick={() => {
+        setOpenLarge(false);
+      }}
+      className={`embla ${openLarge && "large"} `}
+    >
+      <PrevButton
+        className="large-btn absolute left-4 embla__button embla__button--next flex bg-[#f5f5f5]"
+        onClick={onPrevButtonClick}
+        disabled={prevBtnDisabled}
+      />
+      <NextButton
+        className="large-btn absolute  right-8 embla__button embla__button--next flex bg-[#f5f5f5]"
+        onClick={onNextButtonClick}
+        disabled={nextBtnDisabled}
+      />
+      <div
+        onClick={() => {
+          setOpenLarge(false);
+        }}
+        className="cancel size-14 cursor-pointer text-white absolute top-1 left-1"
+      >
+        <FaTimes size={28} color="white" />
+      </div>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index, embla) => (
-            <div className="embla__slide rounded-md cursor-pointer" key={embla}>
-              <img
-                src={index}
-                loading="lazy"
-                layout="fill"
-                className="embla__slide__number h-full w-full object-cover bg-red-500"
+          {slides.map((slide, index) => (
+            <div
+              className="embla__slide relative rounded-md cursor-pointer"
+              key={index}
+            >
+              <ImageComponent
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setOpenLarge(true);
+                  if (emblaApi) {
+                    emblaApi.scrollTo(index); // Set clicked slide as active
+                  }
+                }}
+                className="embla__slide__number object-cover h-full w-full"
+                slide={slide}
               />
+              {/* <img
+                src={slide}
+                onLoad={() => {}}
+                loading="lazy"
+                className="embla__slide__number h-full w-full object-cover "
+              /> */}
             </div>
           ))}
         </div>
       </div>
 
       <div className="embla__controls mx-auto w-[92%] max-w-[1300px]">
-        <div className="embla__buttons ">
+        <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>

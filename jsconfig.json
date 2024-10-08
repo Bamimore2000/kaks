@@ -5,3 +5,22 @@
     }
   }
 }
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": "src/",
+//     "paths": {
+//       "@/styles/*": ["styles/*"],
+//       "@/components/*": ["components/*"]
+//     }
+//   }
+// }
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/components/*": ["components/*"]
+//     }
+//   }
+// }

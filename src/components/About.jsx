@@ -3,6 +3,7 @@ import Image from "next/image";
 import Book from "./Book";
 import { twMerge } from "tailwind-merge";
 import ConnectBtn from "./ConnectBtn";
+import { aboutImages } from "../app/lib/data";
 import AboutCarousel from "./AboutCarousel";
 import Testimonials from "./Testimonials";
 const About = () => {
@@ -63,7 +64,7 @@ const About = () => {
               >
                 <Image
                   height={32}
-                  width={24}
+                  width={32}
                   src={about.icon}
                   alt={about.heading}
                 />
@@ -102,7 +103,7 @@ const About = () => {
         </div>
         <ConnectBtn className="mt-2 md:hidden" />
       </div>
-      <AboutCarousel slides={imageData} options={OPTIONS} />
+      <AboutCarousel slides={aboutImages} options={OPTIONS} />
       <Testimonials />
     </section>
   );

@@ -90,11 +90,14 @@ const ImageGrid = ({ images }) => {
           className={`flex flex-col gap-2 h-full`}
         >
           {getColumnImages(i).map((image, idx) => (
-            <div key={idx} className="w-full relative h-[150px] md:h-[300px]">
+            <div
+              key={image.key}
+              className="w-full relative h-[150px] md:h-[300px]"
+            >
               <Image
                 layout="fill"
                 objectFit="cover"
-                src={image}
+                src={image.url}
                 alt={`Image ${idx}`}
                 loading="lazy"
               />

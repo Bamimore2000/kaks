@@ -21,7 +21,7 @@ const NavBar = () => {
       style={{
         transition: "all 500ms ease",
       }}
-      className="fixed nav-bar shadow-md shadow-gray-400 z-30 top-0  left-0 w-full right-0 bg-white h-[80px] flex justify-between"
+      className="fixed nav-bar shadow-sm shadow-black/20 z-30 top-0  left-0 w-full right-0 bg-white h-[80px] flex justify-between"
     >
       <div
         style={{
@@ -32,10 +32,11 @@ const NavBar = () => {
       >
         <div className="logo flex justify-between gap-2 items-center">
           {/* TODO: KAKS LOGO MUST BE HERE */}
-          <div className="logo relative h-[50px] w-[50px]">
+          <div className="logo relative h-[40px] w-[40px]">
             <Image
+              priority="true"
               layout="fill"
-              src="https://utfs.io/f/gzs3u2midcSLyFwNyJgSXFer2COT0bsJo8a5jt6Wn9fDGvpL"
+              src="https://utfs.io/f/bVD2WD1fkUi1E11GecIMTFznvhK9Uo7Peywxt12G5qa3gjkl"
             />
           </div>
           <div className="name">Kaks</div>

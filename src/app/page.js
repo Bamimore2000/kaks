@@ -11,10 +11,10 @@ import Footer from "@/components/Footer";
 import { ToggleProvider } from "@/components/contexts/toggleContexts";
 import BottomSheet from "@/components/BottomSheet";
 import ContactContent from "@/components/ContactContent";
-import { imageData } from "./lib/data";
+// import { imageData } from "./lib/data";
+import { heroImages } from "./lib/data";
 import ImageGrid from "@/components/Hero";
 const Page = () => {
-  console.log({ imageData });
   return (
     <ToggleProvider>
       <main className="max-w-full">
@@ -22,7 +22,7 @@ const Page = () => {
         <BottomSheet height="20svh">
           <ContactContent />
         </BottomSheet>
-        <ImageGrid images={imageData} />
+        <ImageGrid images={heroImages} />
         <Count />
         <Portfolio />
         <About />
