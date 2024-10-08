@@ -5,16 +5,16 @@ const Hamburger = ({ isOpen, setIsOpen }) => {
         setIsOpen((prev) => !prev);
         console.log(isOpen);
       }}
-      className="hamburger md:hidden relative w-8 h-8 flex flex-col justify-center items-center cursor-pointer"
+      className="hamburger md:hidden relative w-6 h-8 flex flex-col justify-center items-center cursor-pointer"
     >
       <span
         className={`block bg-black my-2 h-[2px] w-full transition-transform duration-500 ease-in-out ${
-          isOpen ? "rotate-45 translate-y-[6px]" : "translate-y-0"
+          isOpen ? "rotate-45 translate-y-[7px]" : "translate-y-0"
         }`}
       ></span>
       <span
         className={`block my-1 bg-black h-[2px] w-full transition-transform duration-500 ease-in-out ${
-          isOpen ? "-rotate-45 -translate-y-[6px]" : "opacity-100"
+          isOpen ? "-rotate-45 -translate-y-[7px]" : "opacity-100"
         }`}
       ></span>
     </div>

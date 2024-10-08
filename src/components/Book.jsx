@@ -5,10 +5,11 @@ import { useState } from "react";
 import { BottomSheet } from "./BottomSheet";
 import { useToggle } from "./contexts/toggleContexts";
 
-const Book = ({ isOpen, setIsOpen, className }) => {
+const Book = ({ isOpen, setIsOpen, className, ...restProps }) => {
   const { openSheet, setOpenSheet } = useToggle();
   return (
     <button
+      {...restProps}
       onClick={() => {
         setOpenSheet(true);
         if (isOpen && setIsOpen) {
