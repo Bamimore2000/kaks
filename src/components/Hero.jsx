@@ -99,7 +99,7 @@ const ImageGrid = ({ images }) => {
                 objectFit="cover"
                 src={image.url}
                 alt={`Image ${idx}`}
-                loading="lazy"
+                priority
               />
             </div>
           ))}
