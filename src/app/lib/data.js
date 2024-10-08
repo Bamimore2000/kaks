@@ -645,40 +645,46 @@ export const abouts = [
 
 export const testimonials = [
   {
-    name: " Maya K., Operations Lead",
+    name: "Lagos Country Club",
     role: "Director",
     comment:
-      "As a team, we were able to streamline our process like never before. It's a game-changer.”",
+      "Working with this platform has transformed our operations at Lagos Country Club. We’ve streamlined processes we thought were set in stone, making our workflow much more efficient. It’s truly a game-changer.",
   },
   {
-    name: "Mr. Bayo",
+    name: "Wemy Industries",
     role: "Director",
     comment:
-      "We had been struggling with inefficient workflows for months, constantly between tools that didn't communicate well with each other.Then we found this platform, and it was a breath of fresh air. Not only did it integrate perfectly with our existing tech stack.",
+      "Before adopting this platform, we were caught in a frustrating cycle of switching between tools that didn’t connect. Finding this solution was a breath of fresh air! Our productivity has soared since it seamlessly integrated into our existing tech stack.",
   },
   {
-    name: "Anna B,",
+    name: "Yaba Local Government Council",
     role: "Sales Rep",
     comment:
-      "This solution enabled us to scale quickly. We felt supported at every step of the way",
+      "This solution has allowed us to scale operations like never before. The support we received throughout the process made a huge difference, and our team feels empowered to tackle any challenge now.",
   },
   {
-    name: "Tunde Anifowose",
+    name: "Lagos State Ministry of Health",
     role: "CEO",
     comment:
-      "I couldn't be happier with how everything's worked out. The impact on our team's efficiency was immediate.",
+      "I’m thrilled with the impact this platform has had on our efficiency. Tasks that used to take hours are now done in minutes. This tool is invaluable for us, helping us focus on serving our community better.",
   },
   {
-    name: "Tobi Akoni",
+    name: "The Place",
     role: "CEO",
     comment:
-      "This solution enabled us to scale quickly. We felt supported at every step of the way",
+      "Implementing this solution felt like a pivotal moment for us. We scaled quickly and felt fully supported at every step. The exceptional assistance from the team made all the difference in our growth.",
   },
   {
-    name: "Segun Toba",
+    name: "KAKS WATER",
     role: "Director",
     comment:
-      "We had been struggling with inefficient workflows for months, constantly switching between tools that didn't communicate well with each other. Then we found this platform, and it was a breath of fresh air. Not only did it integrate perfectly with our existing tech stack.",
+      "We struggled with inefficient workflows for months. Once we discovered this platform, it transformed our operations. It integrates perfectly with our systems, and our efficiency has drastically improved.",
+  },
+  {
+    name: "Dangote Sino Truck",
+    role: "Director",
+    comment:
+      "Switching between tools was frustrating and impacted our productivity. Finding this platform was a revelation. It integrated smoothly, and we’re now operating at a much higher level of efficiency. Excited for what’s next!",
   },
 ];
 

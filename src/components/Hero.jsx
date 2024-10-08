@@ -24,7 +24,7 @@ const ImageGrid = ({ images }) => {
 
     const tl = gsap.to(column, {
       y: direction === "up" ? -scrollHeight / 2 : 0,
-      duration: 90, // Adjust duration as needed
+      duration: 50, // Adjust duration as needed
       ease: "none",
       repeat: -1,
       modifiers: {

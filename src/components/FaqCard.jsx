@@ -1,4 +1,5 @@
-import { PiGreaterThanLight } from "react-icons/pi";
+import { FaGreaterThan } from "react-icons/fa6";
+import { IoIosArrowForward } from "react-icons/io";
 
 const FaqCard = ({ question, answer, setCurrent, current, index }) => {
   return (
@@ -20,7 +21,7 @@ const FaqCard = ({ question, answer, setCurrent, current, index }) => {
             index === current ? "transform rotate-90" : ""
           }`}
         >
-          <PiGreaterThanLight />
+          <IoIosArrowForward />
         </span>
       </div>
       <div className="underline"></div>

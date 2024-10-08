@@ -40,10 +40,10 @@ const Footer = () => {
                 <div className="first flex flex-col text-[#A8A8A8] gap-4">
                   <div className="address font-thin  flex gap-1 items-center">
                     <a
-                      href="https://maps.app.goo.gl/yNtfFdcws9xKjd7z9"
+                      href="https://maps.app.goo.gl/eayQwUUggVaUgN2E8"
                       className="first underline tracking-wide"
                     >
-                      46, White house Agiliti Aina road, <br /> Mile 12 Lagos,
+                      28, County Estate, Pen Cinema, <br /> Ogba Ikeja, Lagos,
                       Nigeria
                     </a>
                     <MdArrowOutward size={20} />
