@@ -21,7 +21,7 @@ const HeroItem = () => {
             government projects
           </p>
           <Book
-            className="bg-[#FFCB05] z-60 hero-book-button gap-1 mt-6 rounded-sm text-[#292929] py-3 px-6 w-[max-content] mx-auto"
+            className="bg-[#FFCB05] z-60 hero-book-button gap-1 mt-6 rounded-sm text-[#292929] py-2 px-4 md:px-6 md:py-3 w-[max-content] mx-auto"
             style={{
               boxShadow:
                 "0px 0px 53.98px 0px rgba(255, 255, 255, 0.5), 0px 2.43px 53.98px 0px rgba(255, 203, 5, 0.19), 0px 2.43px 10.8px 0px rgba(255, 228, 124, 0.41)",
