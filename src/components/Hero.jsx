@@ -100,6 +100,7 @@ const ImageGrid = ({ images }) => {
                 src={image.url}
                 alt={`Image ${idx}`}
                 priority
+                quality={60}
               />
             </div>
           ))}
