@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="right-0 absolute bg-[#fbfbfb] opacity-40 w-px -top-2 -bottom-2 "></div>
           <div className="top-0 absolute -left-2 -right-2 opacity-40 h-px bg-[#fbfbfb]"></div>
           <div className="bottom-0 absolute -left-2 -right-2 opacity-40 h-px bg-[#fbfbfb]"></div>
-          <div className="get-things-done  p-4 md:p-8">
+          <div className="get-things-done py-4 px-2 md:px-8 md:py-8">
             <div className="done">
               <h3 className="text-2xl md:text-4xl mb-6 font-semibold">
                 We get things done!

@@ -15,7 +15,7 @@ const About = () => {
           style={{
             textAlign: "left",
           }}
-          className="mt-6 text-[#A8A8A8] text-[16px] font-mono"
+          className="my-6 text-[#A8A8A8] text-[16px] font-mono"
         >
           About
         </h3>
