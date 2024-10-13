@@ -27,7 +27,7 @@ const About = () => {
             <br className="hidden md:block" /> about?
           </h4>
           <p className="text-[#545454] text-base  font-semibold md:mt-3 mt-2 tracking-tight">
-            Here's what some of our clients have to say about Kaks Multiprofile
+            Here is what some of our clients have to say about Kaks Multiprofile
             Services. – and more time running your business.
           </p>
         </div>
