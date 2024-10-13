@@ -111,7 +111,7 @@ const AboutCarousel = (props) => {
         <div className="flex -ml-4 about__container">
           {slides.map((index, index2) => (
             <div
-              className={`about__slide flex-shrink-0 relative w-[65%] px-3 cursor-pointer ${
+              className={`about__slide flex-shrink-0 select-none relative w-[65%] px-3 cursor-pointer ${
                 !openLarge && "h-[16rem]"
               }`}
               key={index.key}
@@ -124,7 +124,7 @@ const AboutCarousel = (props) => {
                     emblaApi.scrollTo(index2); // Set clicked slide as active
                   }
                 }}
-                className="h-full about__carousel__number object-cover w-full"
+                className="h-full about__carousel__number object-cover select-none w-full"
                 slide={index.url}
               />
               {/* <img

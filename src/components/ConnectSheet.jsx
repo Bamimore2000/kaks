@@ -13,15 +13,15 @@ import {
 } from "framer-motion";
 import { useToggle } from "./contexts/toggleContexts";
 
-const BottomSheet = ({ children, height }) => {
-  const { openSheet, setOpenSheet } = useToggle();
+const ConnectSheet = ({ children, height }) => {
+  const { openConnect, setOpenConnect } = useToggle();
   useEffect(() => {
-    if (openSheet) {
+    if (openConnect) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "visible";
     }
-  }, [openSheet]);
+  }, [openConnect]);
   const [scope, animate] = useAnimate();
   const controls = useDragControls();
   const y = useMotionValue(0);
@@ -35,12 +35,12 @@ const BottomSheet = ({ children, height }) => {
     animate("#drawer", {
       y: [yStart, height || 500],
     });
-    setOpenSheet(false);
+    setOpenConnect(false);
   };
 
   return (
     <>
-      {openSheet && (
+      {openConnect && (
         <div className="fixed  top-0 left-0 z-50">
           <motion.div
             ref={scope}
@@ -110,4 +110,4 @@ const BottomSheet = ({ children, height }) => {
     </>
   );
 };
-export default BottomSheet;
+export default ConnectSheet;

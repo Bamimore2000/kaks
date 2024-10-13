@@ -4,6 +4,8 @@ import { RxEnvelopeClosed } from "react-icons/rx";
 import { IoMapOutline } from "react-icons/io5";
 import { MdLocalPhone, MdOutlineLocalPhone } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 export const links = [
   {
@@ -36,6 +38,31 @@ export const contacts = [
   },
 ];
 
+export const connect = [
+  {
+    href: "https://wa.me/1234567890",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    text: "Via WhatsApp",
+    icon: <FaWhatsapp />,
+  },
+
+  {
+    href: "https://wa.me/1234567890",
+    text: "Via +234 647 4637",
+    icon: <BsTelephone />,
+  },
+  {
+    href: "https://wa.me/1234567890",
+    text: "Instagram",
+    icon: <FaInstagram />,
+  },
+  {
+    href: "https://wa.me/1234567890",
+    text: "Linkedin",
+    icon: <FaLinkedinIn />,
+  },
+];
 export const sectionsName = [
   {
     name: "Construction",

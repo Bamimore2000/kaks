@@ -8,6 +8,8 @@ import Count from "@/components/Count";
 import Faq from "@/components/Faq";
 import Message from "@/components/Message";
 import Footer from "@/components/Footer";
+import ConnectSheet from "../components/ConnectSheet";
+import Connect from "../components/Connect";
 import { ToggleProvider } from "@/components/contexts/toggleContexts";
 import BottomSheet from "@/components/BottomSheet";
 import ContactContent from "@/components/ContactContent";
@@ -19,6 +21,9 @@ const Page = () => {
     <ToggleProvider>
       <main className="max-w-full">
         <NavBar />
+        <ConnectSheet height="20svh">
+          <Connect />
+        </ConnectSheet>
         <BottomSheet height="20svh">
           <ContactContent />
         </BottomSheet>

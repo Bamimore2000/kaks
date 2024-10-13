@@ -5,11 +5,11 @@ const ContactCard = ({ href, icon, text, target, rel }) => {
     <Link
       rel={rel ? rel : ""}
       target={target ? target : ""}
-      className="flex justify-between bg-[#F2F1F1] px-4 py-4 rounded-md"
+      className="flex justify-between bg-[#F2F1F1] px-5 md:px-2 py-3 md:py-2 rounded-md"
       href={href}
     >
-      <span>{text}</span>
-      <span className="text-[30px]">{icon}</span>
+      <span className="md:text-xs">{text}</span>
+      <span className="text-[25px] md:text-[20px]">{icon}</span>
     </Link>
   );
 };

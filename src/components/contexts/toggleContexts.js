@@ -8,11 +8,19 @@ const ToggleContext = createContext();
 // Create a provider component
 export const ToggleProvider = ({ children }) => {
   const [openSheet, setOpenSheet] = useState(false);
+  const [openConnect, setOpenConnect] = useState(false);
   const [current, setCurrent] = useState(sectionsName[0].name);
 
   return (
     <ToggleContext.Provider
-      value={{ openSheet, setOpenSheet, current, setCurrent }}
+      value={{
+        openSheet,
+        setOpenSheet,
+        current,
+        setCurrent,
+        openConnect,
+        setOpenConnect,
+      }}
     >
       {children}
     </ToggleContext.Provider>
