@@ -32,7 +32,7 @@ const OurServices = ({ className }) => {
           return (
             <a
               key={section.name}
-              className="text-xs cursor-pointer text-[#A8A8A8] md:text-sm font-thin"
+              className="text-xs cursor-pointer text-[#A8A8A8] md:text-sm font-semi-bold"
               onClick={(e) => {
                 // TODOs
                 // scroll to the section for showcase

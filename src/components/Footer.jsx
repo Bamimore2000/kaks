@@ -9,12 +9,12 @@ const Footer = () => {
       <div className="footer-wrapper mx-auto py-12  max-w-[1300px] w-[92%]">
         <div className="kaks-socials flex flex-col gap-4 md:flex-row md:items-center ">
           <h3 className="text-white text-2xl">Kaks</h3>
-          <div className="links flex gap-2 text-white">
+          <div className="links flex items-center gap-2 text-white">
             {socialLinks.map((link) => {
               return (
                 <a
                   key={link.link}
-                  className="flex gap-2 text-[#f5f5f5]"
+                  className="flex gap-2 items-center text-[#f5f5f5]"
                   href={link.link}
                 >
                   <span className="font-thin text-sm">{link.name}</span>
@@ -38,7 +38,7 @@ const Footer = () => {
               </h3>
               <div className="address-phone text-xs md:text-sm flex flex-col gap-7">
                 <div className="first flex flex-col text-[#A8A8A8] gap-4">
-                  <div className="address font-thin  flex gap-1 items-center">
+                  <div className="address font-semi-bold  flex gap-1 items-center">
                     <a
                       href="https://maps.app.goo.gl/eayQwUUggVaUgN2E8"
                       className="first underline tracking-wide"
@@ -48,7 +48,7 @@ const Footer = () => {
                     </a>
                     <MdArrowOutward size={20} />
                   </div>
-                  <div className="phone-email font-thin flex gap-1 items-center">
+                  <div className="phone-email font-semi-bold flex gap-1 items-center">
                     <div className="first underline">
                       <a className="phone block" href="tel:2348161179370">
                         Phone: +2348161179370
