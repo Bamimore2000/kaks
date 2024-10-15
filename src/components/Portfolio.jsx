@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ImageHeader from "./ImageHeader";
+import { sectionImages } from "../app/lib/data";
 import { sectionsName } from "@/app/lib/data";
 import ShowCase from "./ShowCase";
 import { imageData } from "@/app/lib/data";
@@ -9,6 +10,11 @@ import { useToggle } from "./contexts/toggleContexts";
 
 const Portfolio = () => {
   const { current, setCurrent } = useToggle();
+  const [display, setDisplay] = useState(sectionImages[current]);
+  const handleImageChange = (section) => {
+    setDisplay(sectionImages[section]);
+  };
+
   // const [current, setCurrent] = useState(sectionsName[0].name);
   const OPTIONS = { loop: true };
   return (
@@ -18,10 +24,15 @@ const Portfolio = () => {
       </p>
 
       <h2 className="section-header py-3">Portfolio</h2>
-      <ImageHeader current={current} setCurrent={setCurrent} />
+      <ImageHeader
+        display={display}
+        handleImageChange={handleImageChange}
+        current={current}
+        setCurrent={setCurrent}
+      />
       <ShowCase
         options={OPTIONS}
-        slides={imageData}
+        slides={display}
         current={current}
         setCurrent={setCurrent}
       />

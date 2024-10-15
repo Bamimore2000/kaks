@@ -94,6 +94,12 @@ const ImageGrid = ({ images }) => {
               key={image.key}
               className="w-full relative h-[150px] md:h-[300px]"
             >
+              {/* <img
+                className="h-full w-full object-cover"
+                src={image.url}
+                alt={`Image ${idx}`}
+                loading="lazy"
+              /> */}
               <Image
                 layout="fill"
                 objectFit="cover"

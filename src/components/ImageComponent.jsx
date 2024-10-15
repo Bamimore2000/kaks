@@ -16,6 +16,10 @@ const ImageComponent = ({ slide, className, ...restprops }) => {
     //     </div>
     //   )}
     //   <img
+    //     {...restprops}
+    //     style={{
+    //       display: loading ? "block" : "none",
+    //     }}
     //     src={slide}
     //     onLoad={() => {
     //       console.log("doneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
@@ -23,6 +27,7 @@ const ImageComponent = ({ slide, className, ...restprops }) => {
     //     }}
     //     onError={() => setLoading(false)}
     //     alt="Image slide"
+    //     loading="lazy"
     //     className={`embla__slide__number w-full h-full object-cover`}
     //   />
     // </>

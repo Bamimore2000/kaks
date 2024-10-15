@@ -160,7 +160,7 @@ const EmblaCarousel = (props) => {
           {slides.map((slide, index) => (
             <div
               className="embla__slide relative rounded-md cursor-pointer"
-              key={index}
+              key={slide.key}
             >
               <ImageComponent
                 onClick={(e) => {
@@ -171,7 +171,7 @@ const EmblaCarousel = (props) => {
                   }
                 }}
                 className="embla__slide__number object-cover h-full w-full"
-                slide={slide}
+                slide={slide.url}
               />
               {/* <img
                 src={slide}
