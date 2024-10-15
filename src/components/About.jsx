@@ -67,7 +67,7 @@ const About = () => {
           <h4 className="mb-4 text-xl italic font-medium md:text2xl">
             Meet the CEO
           </h4>
-          <h5 className="text-lg md:text-xl font-medium">Arikawe Oladipupo</h5>
+          <h5 className="text-lg md:text-xl font-medium">Oladipupo Arikawe</h5>
           <p className="text-gray-600 mb-2">
             Creative, vibrant and Intelligent.
           </p>
@@ -81,9 +81,9 @@ const About = () => {
             />
           </div>
           <p className="text-sm text-gray-700 mt-3 md:text-xs">
-            Arikawe Oladipupo is a seasoned general contractor with over 15
+            Oladipupo Arikawe is a seasoned general contractor with over 15
             years of experience in the construction industry. Specializing in
-            both residential and commercial projects, John has built a
+            both residential and commercial projects, Oladipupo has built a
             reputation for delivering high-quality craftsmanship with a keen eye
             for detail.
           </p>
