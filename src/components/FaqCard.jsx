@@ -7,7 +7,7 @@ const FaqCard = ({ question, answer, setCurrent, current, index }) => {
       style={{
         transition: "all 300ms ease",
       }}
-      className="bg-[#292929] text-left text-xs md:text-base md:py-6 md:px-4 text-white py-4 px-4 my-2"
+      className="bg-[#292929] text-left text-[14px] md:text-base md:py-6 md:px-4 text-white py-4 px-4 my-2"
     >
       <div
         onClick={() => {
@@ -26,7 +26,7 @@ const FaqCard = ({ question, answer, setCurrent, current, index }) => {
       </div>
       <div className="underline"></div>
       <div
-        className={`content text-left leading-5 tracking-wide transition-all duration-300 ${
+        className={`content text-left text-xs  leading-5 tracking-wide transition-all duration-300 ${
           index === current
             ? "max-h-screen opacity-100 mt-3"
             : "max-h-0 opacity-0 overflow-hidden"

@@ -6,25 +6,25 @@ import UsefulLinks from "./UsefulLinks";
 const Footer = () => {
   return (
     <footer className=" mx-auto bg-[#231600] ">
-      <div className="footer-wrapper mx-auto py-12  max-w-[1300px] w-[92%]">
-        <div className="kaks-socials flex flex-col gap-4 md:flex-row md:items-center ">
+      <div className="footer-wrapper mx-auto py-12  ">
+        <div className="kaks-socials flex flex-col gap-4 max-w-[1300px] w-[92%] mx-auto md:flex-row md:items-center ">
           <h3 className="text-white text-2xl">Kaks</h3>
           <div className="links flex items-center gap-2 text-white">
             {socialLinks.map((link) => {
               return (
                 <a
                   key={link.link}
-                  className="flex gap-2 items-center text-[#f5f5f5]"
+                  className="flex gap-1 items-center text-[#f5f5f5]"
                   href={link.link}
                 >
                   <span className="font-thin text-sm">{link.name}</span>
-                  <MdArrowOutward />
+                  <MdArrowOutward color="white" size={12} />
                 </a>
               );
             })}
           </div>
         </div>
-        <div className="footer-items relative pt-6 pb-6 mt-4 grid grid-cols-2 md:grid-cols-3 text-white">
+        <div className="footer-items relative pt-6 pb-6 mt-4 grid max-w-[1300px] mx-auto w-[98%] grid-cols-2 md:grid-cols-3 text-white">
           <div className="left-0 absolute bg-[#fbfbfb] opacity-40 w-px -top-2 -bottom-2 "></div>
           <div className="col-start-2 absolute bg-[#fbfbfb] opacity-40 w-[0.5px] top-0 bottom-0 "></div>
           <div className="col-start-3 hidden md:block absolute opacity-40 bg-[#fbfbfb] w-[0.5px] top-0 bottom-0 "></div>
@@ -34,9 +34,9 @@ const Footer = () => {
           <div className="get-things-done py-4 px-2 md:px-8 md:py-8">
             <div className="done">
               <h3 className="text-2xl md:text-4xl mb-6 font-semibold">
-                We get things done!
+                We get <br className="md:hidden" /> things done!
               </h3>
-              <div className="address-phone text-xs md:text-sm flex flex-col gap-7">
+              <div className="address-phone text-[10px] md:text-sm flex flex-col gap-7">
                 <div className="first flex flex-col text-[#A8A8A8] gap-4">
                   <div className="address font-semi-bold  flex gap-1 items-center">
                     <a
@@ -46,7 +46,7 @@ const Footer = () => {
                       28, County Estate, Pen Cinema, <br /> Ogba Ikeja, Lagos,
                       Nigeria
                     </a>
-                    <MdArrowOutward size={20} />
+                    <MdArrowOutward size={14} />
                   </div>
                   <div className="phone-email font-semi-bold flex gap-1 items-center">
                     <div className="first underline">
@@ -57,7 +57,7 @@ const Footer = () => {
                         Email:md@kaksgroup.com
                       </a>
                     </div>
-                    <MdArrowOutward size={20} />
+                    <MdArrowOutward size={14} />
                   </div>
                 </div>
 
@@ -74,7 +74,7 @@ const Footer = () => {
             <OurServices />
           </div>
         </div>
-        <div className="other-info flex justify-between text-[#A8A8A8] mt-5 text-xs">
+        <div className="other-info flex justify-between text-[#A8A8A8] max-w-[1300px] mx-auto w-[98%] mt-5 text-xs">
           <h5>Kaks &copy; 2024</h5>
           <h5>Based in Nigeria</h5>
           <h5>@Femidesigns</h5>

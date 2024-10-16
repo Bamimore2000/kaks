@@ -27,12 +27,12 @@ const OurServices = ({ className }) => {
       <h4 className="text-white text-xs tracking-wider md:text-sm  md:font-semibold mb-[8px] md:mb-[12px]">
         Our Services
       </h4>
-      <div className="sections flex flex-col gap-2">
+      <div className="sections flex flex-col gap-3">
         {sectionsName.map((section) => {
           return (
             <a
               key={section.name}
-              className="text-xs cursor-pointer text-[#A8A8A8] md:text-sm font-semi-bold"
+              className="text-[10px] cursor-pointer text-[#A8A8A8] md:text-sm font-semi-bold"
               onClick={(e) => {
                 // TODOs
                 // scroll to the section for showcase

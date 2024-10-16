@@ -28,7 +28,7 @@ const UsefulLinks = () => {
           return (
             <a
               key={section.name}
-              className="text-xs md:text-sm text-[#A8A8A8] cursor-pointer font-semi-bold"
+              className="text-[10px] md:text-sm text-[#A8A8A8] cursor-pointer font-semi-bold"
               onClick={(e) => {
                 handleClick(e, section.name);
               }}

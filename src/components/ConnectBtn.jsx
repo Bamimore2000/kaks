@@ -9,7 +9,7 @@ const ConnectBtn = ({ className }) => {
         setOpenConnect(true);
       }}
       className={twMerge(
-        `px-6 py-1 w-max border-gray-400 hover:bg-black/90 hover:text-white rounded-sm border`,
+        `px-8 py-1 w-max border-[#292929] text-[#292929] hover:bg-black/90 hover:text-white rounded-sm border`,
         className
       )}
     >

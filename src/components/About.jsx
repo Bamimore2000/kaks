@@ -22,11 +22,11 @@ const About = () => {
       </div>
       <div className="items-text flex flex-col md:flex-row w-[92%] max-w-[1300px] mx-auto">
         <div className="text">
-          <h4 className="font-bold text-2xl leading-6 xmd:text-3xl">
+          <h4 className="font-semibold text-2xl leading-6 xmd:text-3xl">
             What are <br className="md:hidden" /> we all{" "}
             <br className="hidden md:block" /> about?
           </h4>
-          <p className="text-[#545454] text-base  font-semibold md:mt-3 mt-2 tracking-tight">
+          <p className="text-[#545454] text-base  font-medium md:mt-3 mt-2 tracking-tight">
             Here is what some of our clients have to say about Kaks Multiprofile
             Services. – and more time running your business.
           </p>
@@ -49,7 +49,7 @@ const About = () => {
                   />
                   <div>
                     <h3 className="text-lg font-bold">{about.heading}</h3>
-                    <p className="mt-1 text-[13px] leading-[22px] tracking-[0.01em] ">
+                    <p className="mt-1 text-[14px] leading-[22px] tracking-[0.01em] ">
                       {about.details}
                     </p>
                   </div>
@@ -87,7 +87,7 @@ const About = () => {
             reputation for delivering high-quality craftsmanship with a keen eye
             for detail.
           </p>
-          <ConnectBtn className="my-4 md:mt-4" />
+          <ConnectBtn className="mt-4 mb-10 md:mt-4 md:mb-4" />
 
           {/* <ConnectBtn className="mt-2 hidden md:block" /> */}
         </div>
