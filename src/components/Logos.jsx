@@ -3,7 +3,7 @@ const Logos = () => {
     <section className="logo-sections">
       <div className="sections-wrapper md:text-center mx-auto w-[92%] max-w-[1300px]">
         <h5 className="mt-6 mb-5 text-[#A8A8A8] text-[10px] md:text-[14px] font-mono">
-          Organizations we have constructed for
+          Happy client who have partnered with us
         </h5>
         <h4 className="font-semibold md:text-[24px] leading-6 mb-8 text-black text-[19px]">
           Organizations <br className="md:hidden" /> we have constructed for  

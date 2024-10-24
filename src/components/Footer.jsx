@@ -29,8 +29,8 @@ const Footer = () => {
           <div className="col-start-2 absolute bg-[#fbfbfb] opacity-40 w-[0.5px] top-0 bottom-0 "></div>
           <div className="col-start-3 hidden md:block absolute opacity-40 bg-[#fbfbfb] w-[0.5px] top-0 bottom-0 "></div>
           <div className="right-0 absolute bg-[#fbfbfb] opacity-40 w-px -top-2 -bottom-2 "></div>
-          <div className="top-0 absolute -left-2 -right-2 opacity-40 h-px bg-[#fbfbfb]"></div>
-          <div className="bottom-0 absolute -left-2 -right-2 opacity-40 h-px bg-[#fbfbfb]"></div>
+          <div className="top-0 absolute -left-1 -right-1 opacity-40 h-px bg-[#fbfbfb]"></div>
+          <div className="bottom-0 absolute -left-1 -right-1 opacity-40 h-px bg-[#fbfbfb]"></div>
           <div className="get-things-done py-4 px-2 md:px-8 md:py-8">
             <div className="done">
               <h3 className="text-2xl md:text-4xl mb-6 font-semibold">
