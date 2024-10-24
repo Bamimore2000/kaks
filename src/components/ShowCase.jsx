@@ -155,7 +155,7 @@ const EmblaCarousel = (props) => {
       >
         <FaTimes size={28} color="white" />
       </div>
-      <div className="embla__viewport" ref={emblaRef}>
+      <div className="embla__viewport mt-10" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide, index) => (
             <div

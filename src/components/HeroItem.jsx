@@ -27,7 +27,7 @@ const HeroItem = () => {
                 "0px 0px 53.98px 0px rgba(255, 255, 255, 0.5), 0px 2.43px 53.98px 0px rgba(255, 203, 5, 0.19), 0px 2.43px 10.8px 0px rgba(255, 228, 124, 0.41)",
             }}
           />
-          <div className="lower-details absolute bottom-5 left-1/2 -translate-x-1/2 text-white">
+          {/* <div className="lower-details absolute bottom-5 left-1/2 -translate-x-1/2 text-white">
             <p className="tracking-normal text-[0.625rem]">
               {" "}
               Kaks have completed constructions for companies like:
@@ -68,7 +68,7 @@ const HeroItem = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Your content goes here */}

@@ -24,7 +24,10 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="relative mt-10 py-5 w-[92%] max-w-[1300px] mx-auto">
+    <div
+      id="Testimonials"
+      className="relative mt-10 py-5 w-[92%] max-w-[1300px] mx-auto"
+    >
       <h4 className="text-[#565FAD] text-lg mb-2 font-semi-bold">
         Testimonials
       </h4>

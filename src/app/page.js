@@ -12,6 +12,7 @@ import ConnectSheet from "../components/ConnectSheet";
 import Connect from "../components/Connect";
 import { ToggleProvider } from "@/components/contexts/toggleContexts";
 import BottomSheet from "@/components/BottomSheet";
+import Logos from "../components/Logos";
 import ContactContent from "@/components/ContactContent";
 // import { imageData } from "./lib/data";
 import { heroImages } from "./lib/data";
@@ -28,6 +29,7 @@ const Page = () => {
           <ContactContent />
         </BottomSheet>
         <ImageGrid images={heroImages} />
+        <Logos />
         <Count />
         <Portfolio />
         <About />

@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 const ImageHeader = ({ current, setCurrent, handleImageChange, display }) => {
   return (
-    <div className="w-[95%] flex relative gap-[14px] xmd:gap-0 justify-between mb-12 overflow-x-scroll xsm:overflow-x-hidden mx-auto max-w-lg md:px-3  h-[3.6rem] p-2 ">
+    <div className="w-[95%] flex relative gap-[14px] xmd:gap-0 justify-between mb-7 overflow-x-scroll xsm:overflow-x-hidden mx-auto max-w-lg md:px-3  h-[3.6rem] p-2 ">
       {sectionsName.map((section, index) => {
         return (
           <div

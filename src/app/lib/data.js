@@ -12,7 +12,7 @@ export const links = [
     name: "About",
   },
   {
-    name: "Services",
+    name: "Testimonials",
   },
   {
     name: "Portfolio",

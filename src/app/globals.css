@@ -110,6 +110,10 @@ body {
   padding-right: 0;
 }
 
+.embla__slide__number {
+  border-radius: 3px;
+}
+
 .large-btn {
   display: none;
 }
