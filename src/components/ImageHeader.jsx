@@ -18,9 +18,9 @@ const ImageHeader = ({ current, setCurrent, handleImageChange, display }) => {
               borderBottom:
                 current === section.name ? "2px #8B680E solid" : "none",
               // height: current === section.name ? "100%" : "calc(100% + 2px)",
-              color: current === section.name ? "#292929" : "#A8A8A8",
+              color: "#F3F3F3",
             }}
-            className="text-center select-none text-[16px] md:text-[18px] grid place-items-center cursor-pointer mix-blend-difference h-full"
+            className="text-center select-none text-[16px] md:text-[18px] grid place-items-center cursor-pointer h-full"
           >
             {section.name}
           </div>

@@ -138,12 +138,12 @@ const EmblaCarousel = (props) => {
       className={`embla ${openLarge && "large"} `}
     >
       <PrevButton
-        className="large-btn absolute left-4 embla__button embla__button--next flex bg-[#f5f5f5]"
+        className="large-btn absolute left-4 embla__button embla__button--next flex bg-[#424242]"
         onClick={onPrevButtonClick}
         disabled={prevBtnDisabled}
       />
       <NextButton
-        className="large-btn absolute  right-8 embla__button embla__button--next flex bg-[#f5f5f5]"
+        className="large-btn absolute  right-8 embla__button embla__button--next flex bg-[#424242]"
         onClick={onNextButtonClick}
         disabled={nextBtnDisabled}
       />
@@ -191,16 +191,16 @@ const EmblaCarousel = (props) => {
         </div>
 
         {/* Play/Pause Button */}
-        <div className="buttons-paginations flex bg-[#f5f5f5] px-3  rounded-full h-[45px]">
+        <div className="buttons-paginations flex bg-[#424242] px-3  rounded-full h-[45px]">
           <button
             className="embla__play"
             onClick={toggleAutoplay}
             type="button"
           >
             {isPlaying ? (
-              <CiPause1 color="black" size={25} />
+              <CiPause1 color="white" size={25} />
             ) : (
-              <IoPlayOutline color="black" size={25} />
+              <IoPlayOutline color="white" size={25} />
             )}
           </button>
         </div>

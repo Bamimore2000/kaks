@@ -4,9 +4,9 @@ import Book from "./Book";
 const HeroItem = () => {
   return (
     <div className="absolute  inset-0 z-20 grid place-items-center h-full w-full">
-      <div class="absolute top-0 left-0 right-0 h-full bg-[#3B2603]/[.23] z-30"></div>
+      {/* <div class="absolute top-0 left-0 right-0 h-full bg-[#3B2603]/[.23] z-30"></div>
       <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-b to-[#231600] from-[#895600]/[0] z-20"></div>
-      <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-b to-[#231600]/[.94] from-[#0D0801]/[0] z-10"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-b to-[#231600]/[.94] from-[#0D0801]/[0] z-10"></div> */}
 
       {/* Content wrapper */}
       <div className="content-wrapper w-full relative z-40  h-full grid place-items-center">

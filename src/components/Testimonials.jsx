@@ -31,7 +31,7 @@ const Testimonials = () => {
       <h4 className="text-[#565FAD] text-lg mb-2 font-semi-bold">
         Testimonials
       </h4>
-      <h5 className="text-[26px] font-bold">
+      <h5 className="text-[26px] font-bold text-[#FDFDFD]">
         Exceptional service & <br /> top-notch craftsmanship!
       </h5>
 
@@ -50,7 +50,7 @@ const Testimonials = () => {
       {!isWideScreen && (
         <div className="relative mt-4">
           <div
-            className={`blurred-overlay bg-gradient-to-b from-transparent via-white/90 to-white/100 absolute inset-x-0 bottom-0 h-[150px] transition-all duration-300 ease-in-out ${
+            className={`blurred-overlay bg-gradient-to-b from-transparent via-[#141414]/90 to-[#141414]/100 absolute inset-x-0 bottom-0 h-[150px] transition-all duration-300 ease-in-out ${
               showMore ? "opacity-0 h-0" : "opacity-100 h-[150px]"
             }`}
           />

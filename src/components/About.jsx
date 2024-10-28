@@ -9,24 +9,24 @@ import Testimonials from "./Testimonials";
 const About = () => {
   const OPTIONS = { loop: true };
   return (
-    <section id="About" className="section-name py-12">
+    <section id="About" className="section-name py-12 bg-[#141414]">
       <div className="first-description w-[92%] max-w-[1300px] mx-auto">
         <h3
           style={{
             textAlign: "left",
           }}
-          className="my-6 text-[#A8A8A8] text-[16px] font-mono"
+          className="my-6 text-[#FDFDFD] text-[16px] font-mono"
         >
           About
         </h3>
       </div>
       <div className="items-text flex flex-col md:flex-row w-[92%] max-w-[1300px] mx-auto">
         <div className="text">
-          <h4 className="font-semibold text-2xl leading-6 xmd:text-3xl">
+          <h4 className="font-semibold text-2xl text-[#FDFDFD] leading-6 xmd:text-3xl">
             What are <br className="md:hidden" /> we all{" "}
             <br className="hidden md:block" /> about?
           </h4>
-          <p className="text-[#545454] text-base  font-medium md:mt-3 mt-2 tracking-tight">
+          <p className="text-[#DEDEDE] text-base  font-medium md:mt-3 mt-2 tracking-tight">
             Here is what some of our clients have to say about Kaks Multiprofile
             Services. – and more time running your business.
           </p>
@@ -48,8 +48,10 @@ const About = () => {
                     alt={about.heading}
                   />
                   <div>
-                    <h3 className="text-lg font-bold">{about.heading}</h3>
-                    <p className="mt-1 text-[14px] leading-[22px] tracking-[0.01em] ">
+                    <h3 className="text-lg font-bold text-[#DEDEDE]">
+                      {about.heading}
+                    </h3>
+                    <p className="mt-1 text-[14px] text-[#B1B1B1] leading-[22px] tracking-[0.01em] ">
                       {about.details}
                     </p>
                   </div>
@@ -58,17 +60,19 @@ const About = () => {
             })}
           </div>
 
-          <Book className="mt-4 md:ml-6 lg:ml-8 xl:ml-12" />
+          <Book className="mt-4 md:ml-6 lg:ml-8 xl:ml-12 text-[#141414] bg-[#FDFDFD]" />
         </div>
       </div>
 
       <div className="meet-details md:items-center md:py-8 mt-12 flex flex-col md:flex-row gap-y-5 w-[92%] max-w-[1300px] mx-auto">
         <div className="first-col md:max-w-[35%]">
-          <h4 className="mb-4 text-xl italic font-medium md:text2xl">
+          <h4 className="mb-4 text-xl italic font-medium md:text2xl text-[#FDFDFD]">
             Meet the CEO
           </h4>
-          <h5 className="text-lg md:text-xl font-medium">Oladipupo Arikawe</h5>
-          <p className="text-gray-600 mb-2">
+          <h5 className="text-lg text-[#FAFAFA] md:text-xl font-medium">
+            Oladipupo Arikawe
+          </h5>
+          <p className=" mb-2 text-[#B4B4B4]">
             Creative, vibrant and Intelligent.
           </p>
           <div className="image-container w-screen relative left-1/2 md:hidden -translate-x-1/2 xmd:h-[350px] sm:h-[420px] h-[300px]">
@@ -80,14 +84,14 @@ const About = () => {
               src="https://utfs.io/f/gzs3u2midcSLpLIs4b7xAavRtrduf6gsGeQMOZHwyp5lkjPm"
             />
           </div>
-          <p className="text-sm text-gray-700 mt-3 md:text-xs">
+          <p className="text-sm mt-3 md:text-xs text-[#DEDEDE]">
             Oladipupo Arikawe is a seasoned general contractor with over 15
             years of experience in the construction industry. Specializing in
             both residential and commercial projects, Oladipupo has built a
             reputation for delivering high-quality craftsmanship with a keen eye
             for detail.
           </p>
-          <ConnectBtn className="mt-4 mb-10 md:mt-4 md:mb-4" />
+          <ConnectBtn className="mt-4 border-[#F0F0F0] text-[#F0F0F0] mb-10 md:mt-4 md:mb-4" />
 
           {/* <ConnectBtn className="mt-2 hidden md:block" /> */}
         </div>
@@ -104,7 +108,7 @@ const About = () => {
         </div>
       </div>
       <div className="carousel w-[92%] max-w-[1300px] mx-auto">
-        <h4 className="mb-4 text-xl italic font-medium md:text2xl">
+        <h4 className="mb-4 text-xl italic font-medium md:text2xl text-[#FDFDFD]">
           Staffs on Duty
         </h4>
       </div>

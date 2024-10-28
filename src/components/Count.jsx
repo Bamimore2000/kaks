@@ -3,8 +3,8 @@ import React, { useEffect, useState, useRef } from "react";
 
 const MultiCounter = () => {
   const counters = [
-    { label: "Total Projects", target: 231 },
-    { label: "Total Clients", target: 520 },
+    { label: "Total Projects", target: 1045 },
+    { label: "Total Clients", target: 599 },
     { label: "Customer Support", target: "24/7" }, // Combined availability
     { label: "Success Rate", target: 99 }, // Display as a percentage
   ];

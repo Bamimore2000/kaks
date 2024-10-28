@@ -53,7 +53,7 @@ export const PrevButton = (props) => {
     <button
       style={style}
       className={twMerge(
-        "embla__button embla__button--prev flex bg-[#f5f5f5]",
+        "embla__button embla__button--prev flex bg-[#424242]",
         className
       )}
       type="button"
@@ -77,7 +77,7 @@ export const NextButton = (props) => {
     <button
       style={style}
       className={twMerge(
-        "embla__button embla__button--next flex bg-[#f5f5f5]",
+        "embla__button embla__button--next flex bg-[#424242]",
         className
       )}
       type="button"

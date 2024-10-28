@@ -18,8 +18,11 @@ const Portfolio = () => {
   // const [current, setCurrent] = useState(sectionsName[0].name);
   const OPTIONS = { loop: true };
   return (
-    <section id="Portfolio" className="section-main py-8">
-      <p className="text-center mt-4 text-gray-400 text-[10px] font-mono">
+    <section
+      id="Portfolio"
+      className="section-main py-8 bg-[#141414] text-white"
+    >
+      <p className="text-center mt-4 text-[#CECECE] text-[10px] font-mono">
         A collection of my best works
       </p>
 
