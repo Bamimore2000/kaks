@@ -11,14 +11,12 @@ const MultiCounter = () => {
 
   const [counts, setCounts] = useState(counters.map(() => 0));
   const ref = useRef(null);
-  const hasCounted = useRef(false); // Track if counting has occurred
 
   useEffect(() => {
     const handleIntersection = (entries) => {
       const entry = entries[0];
-      if (entry.isIntersecting && !hasCounted.current) {
-        hasCounted.current = true; // Set the flag to true after first count
-        startCounting();
+      if (entry.isIntersecting) {
+        resetAndCount();
       }
     };
 
@@ -37,7 +35,10 @@ const MultiCounter = () => {
     };
   }, [ref]);
 
-  const startCounting = () => {
+  const resetAndCount = () => {
+    // Reset counts to zero before starting the count
+    setCounts(counters.map(() => 0));
+
     const duration = 3000; // 3 seconds
 
     counters.forEach((counter, index) => {
@@ -77,7 +78,7 @@ const MultiCounter = () => {
             key={index}
             className="counter-item justify-center text-center flex flex-col gap-0"
           >
-            <span className="number text-[1.5625rem]  md:text-[1.875rem] font-bold text-[#141414]">
+            <span className="number text-[1.5625rem] md:text-[1.875rem] font-bold text-[#141414]">
               {counts[index] || counter.target}
               {counter.label === "Success Rate" && "%"}
             </span>

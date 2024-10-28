@@ -30,7 +30,7 @@ const EmblaCarousel = (props) => {
   ]);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef([]);
-  const [isPlaying, setIsPlaying] = useState(false); // State for autoplay
+  const [isPlaying, setIsPlaying] = useState(true); // State for autoplay
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
