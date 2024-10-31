@@ -16,6 +16,7 @@ const Footer = () => {
                   key={link.link}
                   className="flex gap-1 items-center text-[#f5f5f5]"
                   href={link.link}
+                  target="_blank"
                 >
                   <span className="font-thin text-sm">{link.name}</span>
                   <MdArrowOutward color="white" size={12} />

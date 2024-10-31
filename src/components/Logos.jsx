@@ -6,7 +6,7 @@ const Logos = () => {
           Happy client who have partnered with us
         </h5>
         <h4 className="font-semibold md:text-[24px] leading-6 mb-8 text-black text-[19px]">
-          Organizations <br className="md:hidden" /> we have constructed for  
+          Few of the organizations <br /> we have constructed for 
         </h4>
         <div className="images mb-5 md:hidden">
           <img

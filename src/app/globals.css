@@ -60,9 +60,9 @@ body {
   }
 
   /* reduced the margin top of the hero book button */
-  .hero-book-button {
+  /* .hero-book-button {
     margin-top: 1.25rem;
-  }
+  } */
 
   /* made the lower details touch the bottom */
   .lower-details {

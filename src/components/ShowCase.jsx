@@ -26,7 +26,7 @@ const EmblaCarousel = (props) => {
   // A use effect to fecth slides based on the button clicked
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ playOnInit: false, delay: 3000 }), // Integrate Autoplay
+    Autoplay({ playOnInit: true, delay: 1500 }), // Integrate Autoplay
   ]);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef([]);

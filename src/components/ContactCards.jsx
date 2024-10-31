@@ -6,6 +6,7 @@ const ContactCards = ({ icon, secondary, link, text }) => {
       <a
         className="underline inline-block max-w-[60%] text-[#FBFBFB]"
         href={link}
+        target="_blank"
       >
         {text}
       </a>

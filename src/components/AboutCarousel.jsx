@@ -23,7 +23,7 @@ const AboutCarousel = (props) => {
   }, [openLarge]);
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ playOnInit: false, delay: 3000 }),
+    Autoplay({ playOnInit: true, delay: 1500 }),
   ]);
   const [isPlaying, setIsPlaying] = useState(false);
 

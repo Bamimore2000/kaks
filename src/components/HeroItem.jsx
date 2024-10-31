@@ -4,24 +4,47 @@ import Book from "./Book";
 const HeroItem = () => {
   return (
     <div className="absolute  inset-0 z-20 grid place-items-center h-full w-full">
+      <div class="absolute top-0 left-0 right-0 h-full bg-[#3B2603]/[.07] z-10"></div>
+      <div
+        style={{
+          background:
+            " linear-gradient(360deg, #382402 0%, rgba(89, 56, 0, 0.495654) 67.03%, rgba(137, 86, 0, 0) 95.57%)",
+        }}
+        class="absolute bottom-0 left-0 right-0 h-[70%] z-10"
+      ></div>
       {/* <div class="absolute top-0 left-0 right-0 h-full bg-[#3B2603]/[.23] z-30"></div>
       <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-b to-[#231600] from-[#895600]/[0] z-20"></div>
       <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-b to-[#231600]/[.94] from-[#0D0801]/[0] z-10"></div> */}
 
       {/* Content wrapper */}
-      <div className="content-wrapper w-full relative z-40  h-full grid place-items-center">
-        <div className="content-wrapper text-center ">
-          <h1 className="text-3xl main-heading md:text-5xl font-bold leading-tight text-white">
-            {" "}
-            Expert in Construction <br /> Contracting & Consulting
-          </h1>
-          <p className="text-lg secondary-text text-white md:text-xl leading-5 mt-4 max-w-sm md:max-w-lg mx-auto">
-            Elevate your business with our construction, contracting, and
-            consulting services across residential, industrial, commercial, and
-            government projects
-          </p>
+      <div className="content-wrapper w-full relative  h-full grid place-items-center">
+        <div className="content-wrapper text-center">
+          <div className="wrapper relative p-10">
+            <div
+              style={{
+                borderRadius: "50%",
+                background:
+                  "radial-gradient(circle, #231600 99%, transparent 1%)",
+                filter: "blur(120px)",
+              }}
+              className="layer bg-[#231600] absolute inset-0 -z-1"
+            ></div>
+            <h1 className="text-3xl main-heading w-full md:text-5xl relative z-40 font-bold leading-tight text-white">
+              {" "}
+              <p>
+                Expert in Construction <br /> Contracting & Consulting
+              </p>
+            </h1>
+            <p className="text-lg secondary-text text-white z-40 relative md:text-xl leading-6 mt-3 max-w-sm md:max-w-lg mx-auto">
+              Elevate Your Business with Our Comprehensive construction services
+              on residential, industrial and commercial projects, contractings
+              services on government and civil projects and consulting services
+              on approvals, designs and ideations of projects
+            </p>
+          </div>
+
           <Book
-            className="bg-[#FFCB05] z-60 hero-book-button gap-1 mt-6 rounded-sm text-[#292929] py-2 px-4 md:px-6 md:py-3 w-[max-content] mx-auto"
+            className="bg-[#FFCB05] z-40 relative hero-book-button gap-1 mt-0 rounded-sm text-[#292929] py-2 px-4 md:px-6 md:py-3 w-[max-content] mx-auto"
             style={{
               boxShadow:
                 "0px 0px 53.98px 0px rgba(255, 255, 255, 0.5), 0px 2.43px 53.98px 0px rgba(255, 203, 5, 0.19), 0px 2.43px 10.8px 0px rgba(255, 228, 124, 0.41)",

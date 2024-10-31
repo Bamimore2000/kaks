@@ -43,9 +43,9 @@ const NavBar = () => {
         </div>
         <Links />
         <div className="book-hamburger flex justify-between gap-5 items-center">
-          {!isOpen && (
+          {/* {!isOpen && (
             <Book className={"transition-all text-white text-[13px]"} />
-          )}
+          )} */}
 
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>

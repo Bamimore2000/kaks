@@ -24,7 +24,7 @@ export const links = [
 
 export const contacts = [
   {
-    href: "https://wa.me/1234567890",
+    href: "https://wa.me/2348161179370",
     target: "_blank",
     rel: "noopener noreferrer",
     text: "Via WhatsApp",
@@ -32,15 +32,16 @@ export const contacts = [
   },
 
   {
-    href: "https://wa.me/1234567890",
-    text: "Via +234 647 4637",
+    href: "tel:2348161179370",
+    text: "Via +234 816 117 9370",
+    target: "_blank",
     icon: <BsTelephone />,
   },
 ];
 
 export const connect = [
   {
-    href: "https://wa.me/1234567890",
+    href: "https://wa.me/2348161179370",
     target: "_blank",
     rel: "noopener noreferrer",
     text: "Via WhatsApp",
@@ -48,17 +49,20 @@ export const connect = [
   },
 
   {
-    href: "https://wa.me/1234567890",
-    text: "Via +234 647 4637",
+    href: "tel:2348161179370",
+    target: "_blank",
+    text: "Via +234 816 117 9370",
     icon: <BsTelephone />,
   },
   {
-    href: "https://wa.me/1234567890",
+    href: "https://www.instagram.com/oladipupoarikawe/profilecard/?igsh=MzRrbHp2a3gzdDgx",
+    target: "_blank",
     text: "Instagram",
     icon: <FaInstagram />,
   },
   {
-    href: "https://wa.me/1234567890",
+    href: "https://www.linkedin.com/in/oladipupo-arikawe-661540196?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    target: "_blank",
     text: "Linkedin",
     icon: <FaLinkedinIn />,
   },
@@ -1882,7 +1886,7 @@ export const contactCards = [
     icon: <MdOutlineLocalPhone size={35} color="#A46803" />,
     text: "+2348161179370",
     secondary: "Call Us",
-    link: "+2348161179370",
+    link: "tel:2348161179370",
   },
 ];
 
@@ -1926,15 +1930,15 @@ export const socialLinks = [
   },
   {
     name: "WhatsApp",
-    link: "https://wa.me/1234567890",
+    link: "https://wa.me/2348161179370",
   },
   {
     name: "Instagram",
-    link: "https://instagram.com/yourprofile",
+    link: "https://www.instagram.com/kaksprojects/profilecard/?igsh=dGRhY2pyNnloc2ts",
   },
   {
     name: "LinkedIn",
-    link: "https://linkedin.com/in/yourprofile",
+    link: "https://www.linkedin.com/in/oladipupo-arikawe-661540196?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
 ];
 
