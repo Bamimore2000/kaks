@@ -36,7 +36,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
-          sizes="32x32"
+          sizes="any"
+          type="image"
           href="https://utfs.io/f/bVD2WD1fkUi1E11GecIMTFznvhK9Uo7Peywxt12G5qa3gjkl"
         />{" "}
         {/* Optional: Add a favicon */}

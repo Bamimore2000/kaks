@@ -1793,31 +1793,31 @@ export const heroImages = [
 
 export const abouts = [
   {
-    icon: "https://utfs.io/f/nPGY9URoEP4TSYYrSjBkPkg9VGAdrbjmUt1S2OBJNapXKsu7",
+    icon: "https://utfs.io/f/gzs3u2midcSLWl8pxhZKdfILRgQSYXFlTsNwpk7oGjiu5bBC",
     heading: "Construction",
     details:
       "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
   },
   {
-    icon: "https://utfs.io/f/nPGY9URoEP4TI7WjqSae5doiTvklnS9p0CzZrj4LqIPxVYf7",
+    icon: "https://utfs.io/f/gzs3u2midcSLWwJKJhZKdfILRgQSYXFlTsNwpk7oGjiu5bBC",
     heading: "General Contractor",
     details:
       "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
   },
   {
-    icon: "https://utfs.io/f/nPGY9URoEP4TK8CYZ1jdFtMscAYe4z29gnjirvKH65PSoupU",
+    icon: "https://utfs.io/f/gzs3u2midcSLdcUhsHnNQqBCIr3tg9U2fe1LpvHZnbTNAiOw",
     heading: "Water Engineering",
     details:
       "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
   },
   {
-    icon: "https://utfs.io/f/nPGY9URoEP4Toi1hUuFrJ3ZYvLhNRWtoDOnGfekpCzxUMjHw",
+    icon: "https://utfs.io/f/gzs3u2midcSLlDqfAJHUDT3uwgtikvflObzcPj2xA40pYCmd",
     heading: "Real Estate Consultant",
     details:
       "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
   },
   {
-    icon: "https://utfs.io/f/nPGY9URoEP4Tnv1z8LURoEP4TucnxS3twpJsdOYef1bj7rWG",
+    icon: "https://utfs.io/f/gzs3u2midcSL00UiyCMpb9DUFgxEW2aznsKtmv3YruQky4Zw",
     heading: "Project Management",
     details:
       "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",

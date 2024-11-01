@@ -19,7 +19,7 @@ const HeroItem = () => {
       {/* Content wrapper */}
       <div className="content-wrapper w-full relative  h-full grid place-items-center">
         <div className="content-wrapper text-center">
-          <div className="wrapper relative p-10">
+          <div className="wrapper relative w-full mx-auto py-10">
             <div
               style={{
                 borderRadius: "50%",
@@ -29,13 +29,13 @@ const HeroItem = () => {
               }}
               className="layer bg-[#231600] absolute inset-0 -z-1"
             ></div>
-            <h1 className="text-3xl main-heading w-full md:text-5xl relative z-40 font-bold leading-tight text-white">
+            <h1 className="text-3xl text-center main-heading w-full mx-auto md:text-5xl relative z-40 font-bold leading-tight text-white">
               {" "}
               <p>
-                Expert in Construction <br /> Contracting & Consulting
+                Expert in Construction <br /> Contracting&nbsp;&&nbsp;Consulting
               </p>
             </h1>
-            <p className="text-lg secondary-text text-white z-40 relative md:text-xl leading-6 mt-3 max-w-sm md:max-w-lg mx-auto">
+            <p className="text-lg secondary-text w-[90%] text-white z-40 relative md:text-xl leading-6 mt-3 max-w-sm md:max-w-lg mx-auto">
               Elevate Your Business with Our Comprehensive construction services
               on residential, industrial and commercial projects, contractings
               services on government and civil projects and consulting services

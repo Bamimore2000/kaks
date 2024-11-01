@@ -66,13 +66,13 @@ const About = () => {
 
       <div className="meet-details md:items-center md:py-8 mt-12 flex flex-col md:flex-row gap-y-5 w-[92%] max-w-[1300px] mx-auto">
         <div className="first-col md:max-w-[35%]">
-          <h4 className="mb-4 text-xl italic font-medium md:text2xl text-[#FDFDFD]">
+          <h4 className="mb-4 text-xl text-[20px] italic font-medium md:text-[40px] text-[#FDFDFD]">
             Meet the CEO
           </h4>
-          <h5 className="text-lg text-[#FAFAFA] md:text-xl font-medium">
+          <h5 className="text-[18px] text-[#FAFAFA] md:text-[33px] font-medium">
             Oladipupo Arikawe
           </h5>
-          <p className=" mb-2 text-[#B4B4B4]">
+          <p className=" mb-2 text-[14px] md:text-[26px] text-[#B4B4B4]">
             Creative, vibrant and Intelligent.
           </p>
           <div className="image-container w-screen relative left-1/2 md:hidden -translate-x-1/2 xmd:h-[350px] sm:h-[420px] h-[300px]">
@@ -84,14 +84,14 @@ const About = () => {
               src="https://utfs.io/f/gzs3u2midcSLpLIs4b7xAavRtrduf6gsGeQMOZHwyp5lkjPm"
             />
           </div>
-          <p className="text-sm mt-3 md:text-xs text-[#DEDEDE]">
+          <p className=" mt-3 text-[14px] md:text-[20px] text-[#DEDEDE]">
             Oladipupo Arikawe is a seasoned general contractor with over 15
             years of experience in the construction industry. Specializing in
             both residential and commercial projects, Oladipupo has built a
             reputation for delivering high-quality craftsmanship with a keen eye
             for detail.
           </p>
-          <ConnectBtn className="mt-4 border-[#F0F0F0] text-[#F0F0F0] mb-10 md:mt-4 md:mb-4" />
+          <ConnectBtn className="mt-4 w-[137px] h-[39px] md:w-[182px] md:h-[59px] border-[#F0F0F0] text-[#F0F0F0] mb-10 md:mt-4 md:mb-4" />
 
           {/* <ConnectBtn className="mt-2 hidden md:block" /> */}
         </div>
