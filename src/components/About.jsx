@@ -39,7 +39,7 @@ const About = () => {
               return (
                 <div
                   key={index}
-                  className="flex flex-col gap-y-4 px-2 py-8 md:p-6 lg:p-8 xl:p-12"
+                  className="flex flex-col gap-y-4 py-8 md:p-6 lg:p-8 xl:p-12"
                 >
                   <Image
                     height={32}
@@ -81,7 +81,7 @@ const About = () => {
               width={500}
               quality={60}
               className="w-full h-full object-cover"
-              src="https://utfs.io/f/gzs3u2midcSLpLIs4b7xAavRtrduf6gsGeQMOZHwyp5lkjPm"
+              src="https://utfs.io/f/gzs3u2midcSLPOeKK6yJXmR4yYxHgP5kw6N8BCKcnF9GjVvQ"
             />
           </div>
           <p className=" mt-3 text-[14px] md:text-[20px] text-[#DEDEDE]">
@@ -96,13 +96,13 @@ const About = () => {
           {/* <ConnectBtn className="mt-2 hidden md:block" /> */}
         </div>
         <div className="image-container w-full hidden md:flex md:justify-end ">
-          <div className="max-w-[450px]  w-full h-[350px]">
+          <div className="max-w-[500px]  w-full h-[400px]">
             <Image
               height={500}
               width={500}
               quality={60}
               className="w-full h-full object-cover select-none"
-              src="https://utfs.io/f/gzs3u2midcSLpLIs4b7xAavRtrduf6gsGeQMOZHwyp5lkjPm"
+              src="https://utfs.io/f/gzs3u2midcSLPOeKK6yJXmR4yYxHgP5kw6N8BCKcnF9GjVvQ"
             />
           </div>
         </div>
