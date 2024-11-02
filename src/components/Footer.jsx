@@ -27,17 +27,17 @@ const Footer = () => {
         </div>
         <div className="footer-items relative pt-6 pb-6 mt-4 grid max-w-[1300px] mx-auto w-[98%] grid-cols-2 md:grid-cols-3 text-white">
           <div className="left-0 absolute bg-[#fbfbfb] opacity-40 w-px -top-2 -bottom-2 "></div>
-          <div className="col-start-2 absolute bg-[#fbfbfb] opacity-40 w-[0.5px] top-0 bottom-0 "></div>
+          <div className="col-start-2 hidden md:block absolute bg-[#fbfbfb] opacity-40 w-[0.5px] top-0 bottom-0 "></div>
           <div className="col-start-3 hidden md:block absolute opacity-40 bg-[#fbfbfb] w-[0.5px] top-0 bottom-0 "></div>
           <div className="right-0 absolute bg-[#fbfbfb] opacity-40 w-px -top-2 -bottom-2 "></div>
           <div className="top-0 absolute -left-1 -right-1 opacity-40 h-px bg-[#fbfbfb]"></div>
           <div className="bottom-0 absolute -left-1 -right-1 opacity-40 h-px bg-[#fbfbfb]"></div>
-          <div className="get-things-done py-4 px-2 md:px-8 md:py-8">
+          <div className="get-things-done py-4 px-4 md:px-8 md:py-8">
             <div className="done">
               <h3 className="text-2xl md:text-4xl mb-6 font-semibold">
                 We get <br className="md:hidden" /> things done!
               </h3>
-              <div className="address-phone text-[10px] md:text-sm flex flex-col gap-7">
+              <div className="address-phone text-[12px] md:text-sm flex flex-col gap-7">
                 <div className="first flex flex-col text-[#A8A8A8] gap-4">
                   <div className="address font-semi-bold  flex gap-1 items-center">
                     <a

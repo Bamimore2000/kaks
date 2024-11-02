@@ -1796,31 +1796,31 @@ export const abouts = [
     icon: "https://utfs.io/f/gzs3u2midcSLWl8pxhZKdfILRgQSYXFlTsNwpk7oGjiu5bBC",
     heading: "Construction",
     details:
-      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+      "As a comprehensive Contractor firm, we manage all phases of the construction journey, from initial planning to final inspections.",
   },
   {
     icon: "https://utfs.io/f/gzs3u2midcSLWwJKJhZKdfILRgQSYXFlTsNwpk7oGjiu5bBC",
     heading: "General Contractor",
     details:
-      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+      "We specialize in aligning products and solutions with client needs while also providing expert guidance and professional advice.",
   },
   {
     icon: "https://utfs.io/f/gzs3u2midcSLdcUhsHnNQqBCIr3tg9U2fe1LpvHZnbTNAiOw",
     heading: "Water Engineering",
     details:
-      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+      "We provide crucial water infrastructure services such as treatment facilities, pipeline systems, and irrigation, focusing on sustainable management.",
   },
   {
     icon: "https://utfs.io/f/gzs3u2midcSLlDqfAJHUDT3uwgtikvflObzcPj2xA40pYCmd",
     heading: "Real Estate Consultant",
     details:
-      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+      "We excel in aligning property solutions with client requirements, ensuring that our offerings meet specific needs while providing expert counsel.",
   },
   {
     icon: "https://utfs.io/f/gzs3u2midcSL00UiyCMpb9DUFgxEW2aznsKtmv3YruQky4Zw",
     heading: "Project Management",
     details:
-      "We excel in selling products and solutions matching a client's needs to what the company has to offer. Also we offer professional advice.",
+      "We deliver comprehensive project management services that encompass planning, scheduling, and resource allocation, minimizing risks and optimizing budgets.",
   },
 ];
 

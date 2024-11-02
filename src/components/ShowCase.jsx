@@ -191,7 +191,7 @@ const EmblaCarousel = (props) => {
         </div>
 
         {/* Play/Pause Button */}
-        <div className="buttons-paginations flex bg-[#424242] px-3  rounded-full h-[45px]">
+        <div className="buttons-paginations bg-[#424242] grid place-items-center  rounded-full w-[50px] h-[50px]">
           <button
             className="embla__play"
             onClick={toggleAutoplay}

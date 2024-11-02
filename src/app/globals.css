@@ -44,7 +44,7 @@ body {
 
   /* reduced the height of hero page */
   .hero-page {
-    height: "calc(100svh - 65px)";
+    height: 90vh !important;
     margin-top: 65px;
   }
 

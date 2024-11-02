@@ -39,7 +39,7 @@ const About = () => {
               return (
                 <div
                   key={index}
-                  className="flex flex-col gap-y-4 px-2 py-10 md:p-6 lg:p-8 xl:p-12"
+                  className="flex flex-col gap-y-4 px-2 py-8 md:p-6 lg:p-8 xl:p-12"
                 >
                   <Image
                     height={32}

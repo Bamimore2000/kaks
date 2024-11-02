@@ -148,9 +148,9 @@ const AboutCarousel = (props) => {
           />
         </div>
 
-        <div className="flex bg-[#424242] px-3  rounded-full h-[45px]">
+        <div className="grid place-items-center bg-[#424242]  rounded-full w-[45px] h-[45px]">
           <button
-            className=" text-white rounded-lg focus:outline-none "
+            className=" text-white grid place-items-center rounded-lg focus:outline-none "
             onClick={toggleAutoplay}
             type="button"
           >

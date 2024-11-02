@@ -20,7 +20,7 @@ const UsefulLinks = () => {
   };
   return (
     <article>
-      <h4 className="text-white tracking-wider text-xs md:text-sm md:font-semibold mb-[8px] md:mb-[12px]">
+      <h4 className="text-white tracking-wider text-base md:text-sm md:font-semibold mb-[8px] md:mb-[12px]">
         Useful Links
       </h4>
       <div className="sections flex flex-col gap-3">
@@ -28,7 +28,7 @@ const UsefulLinks = () => {
           return (
             <a
               key={section.name}
-              className="text-[10px] md:text-sm text-[#A8A8A8] cursor-pointer font-semi-bold"
+              className="text-[12px] md:text-sm text-[#A8A8A8] cursor-pointer font-semi-bold"
               onClick={(e) => {
                 handleClick(e, section.name);
               }}
