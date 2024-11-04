@@ -1999,19 +1999,19 @@ export const testimonials = [
 
 export const contactCards = [
   {
-    icon: <RxEnvelopeClosed size={35} color="#A46803" />,
+    icon: <RxEnvelopeClosed size={35} color="#FFA000" />,
     secondary: "Email Us",
     text: "md@kaksgroup.com",
     link: "mailto:md@kaksgroup.com",
   },
   {
-    icon: <IoMapOutline size={35} color="#A46803" />,
+    icon: <IoMapOutline size={35} color="#FFA000" />,
     secondary: "Our Address",
     text: "28, County Estate, Pen Cinema, Ogba Ikeja, Lagos, Nigeria.",
     link: "https://maps.app.goo.gl/yNtfFdcws9xKjd7z9",
   },
   {
-    icon: <MdOutlineLocalPhone size={35} color="#A46803" />,
+    icon: <MdOutlineLocalPhone size={35} color="#FFA000" />,
     text: "+2348161179370",
     secondary: "Call Us",
     link: "tel:2348161179370",

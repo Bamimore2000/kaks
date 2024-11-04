@@ -76,7 +76,7 @@ const About = () => {
           <p className=" mb-2 text-[14px] md:text-[26px] text-[#B4B4B4]">
             Creative, vibrant and Intelligent.
           </p>
-          <div className="image-container w-screen relative left-1/2 md:hidden -translate-x-1/2 xmd:h-[350px] sm:h-[420px] h-[300px]">
+          <div className="image-container w-screen relative left-1/2 md:hidden -translate-x-1/2 xmd:h-[420px] sm:h-[450px] h-[400px]">
             <Image
               height={500}
               width={500}

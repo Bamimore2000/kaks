@@ -56,7 +56,7 @@ const Testimonials = () => {
           />
           <button
             onClick={handleToggleShowMore}
-            className="relative z-10 underline block mx-auto mt-3 text-[#A46803] hover:underline"
+            className="relative z-10 underline block mx-auto mt-3 text-[#FFA000] hover:underline"
           >
             {showMore ? "View Less" : "View More"}
           </button>

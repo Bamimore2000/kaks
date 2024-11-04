@@ -16,7 +16,7 @@ const ImageHeader = ({ current, setCurrent, handleImageChange, display }) => {
             }}
             style={{
               borderBottom:
-                current === section.name ? "2px #8B680E solid" : "none",
+                current === section.name ? "2px #FFB800 solid" : "none",
               // height: current === section.name ? "100%" : "calc(100% + 2px)",
               color: "#F3F3F3",
             }}
