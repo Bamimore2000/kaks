@@ -17,7 +17,7 @@ const HeroItem = () => {
       <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-b to-[#231600]/[.94] from-[#0D0801]/[0] z-10"></div> */}
 
       {/* Content wrapper */}
-      <div className="content-wrapper w-full relative  h-full grid place-items-center">
+      <div className="content-wrapper w-full relative  h-full flex justify-center items-end">
         <div className="content-wrapper text-center">
           <div className="wrapper relative w-full mx-auto py-10">
             <div
@@ -29,22 +29,23 @@ const HeroItem = () => {
               }}
               className="layer bg-[#231600] absolute inset-0 -z-1"
             ></div>
-            <h1 className="text-3xl text-center main-heading w-full mx-auto md:text-5xl relative z-40 font-bold leading-tight text-white">
+            <h1 className="text-[25px] text-center main-heading w-full mx-auto md:text-5xl relative z-40 font-bold leading-tight text-white">
               {" "}
               <p>
                 Expert in Construction <br /> Contracting&nbsp;&&nbsp;Consulting
               </p>
             </h1>
-            <p className="text-lg secondary-text w-[90%] text-white z-40 relative md:text-xl leading-6 mt-3 max-w-sm md:max-w-lg mx-auto">
-              Elevate Your Business with Our Comprehensive construction services
-              on residential, industrial and commercial projects, contractings
-              services on government and civil projects and consulting services
-              on approvals, designs and ideations of projects
+            <p className="text-[16px] secondary-text w-[90%] text-white z-40 relative md:text-xl leading-[22.4px] mt-5 max-w-sm md:max-w-lg mx-auto">
+              Execute your project Ideas with Our Comprehensive construction
+              services on residential, industrial and commercial projects,
+              contracting services on government and civil projects and
+              consulting services on approvals, designs and
+              ideations of projects
             </p>
           </div>
 
           <Book
-            className="bg-[#FFCB05] z-40 relative hero-book-button gap-1 mt-0 rounded-sm text-[#292929] py-2 px-3 md:px-6 md:py-3 w-[max-content] mx-auto"
+            className="bg-[#FFCB05] z-40 relative mb-10 hero-book-button gap-1 mt-0 rounded-sm text-[#292929] py-2 px-3 md:px-6 md:py-3 w-[max-content] mx-auto"
             style={{
               boxShadow:
                 "0px 0px 53.98px 0px rgba(255, 255, 255, 0.5), 0px 2.43px 53.98px 0px rgba(255, 203, 5, 0.19), 0px 2.43px 10.8px 0px rgba(255, 228, 124, 0.41)",

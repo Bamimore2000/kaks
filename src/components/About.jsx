@@ -26,9 +26,10 @@ const About = () => {
             What are <br className="md:hidden" /> we all{" "}
             <br className="hidden md:block" /> about?
           </h4>
-          <p className="text-[#DEDEDE] text-base  font-medium md:mt-3 mt-2 tracking-tight">
-            Here is what some of our clients have to say about Kaks Multiprofile
-            Services. – and more time running your business.
+          <p className="text-[#DEDEDE] text-[14px] font-medium md:mt-3 mt-2 tracking-tight">
+            At Kaks, we build with purpose and precision. As experts in general
+            contracting, construction, water engineering, and real estate
+            consulting.
           </p>
         </div>
         <div className="information">
@@ -81,7 +82,7 @@ const About = () => {
               width={500}
               quality={60}
               className="w-full h-full object-cover"
-              src="https://utfs.io/f/gzs3u2midcSLPOeKK6yJXmR4yYxHgP5kw6N8BCKcnF9GjVvQ"
+              src="https://utfs.io/f/gzs3u2midcSLuMkbZ1WOWwrxsTXIb761HcjvGLko2helnA3z"
             />
           </div>
           <p className=" mt-3 text-[14px] md:text-[20px] text-[#DEDEDE]">
@@ -102,7 +103,7 @@ const About = () => {
               width={500}
               quality={60}
               className="w-full h-full object-cover select-none"
-              src="https://utfs.io/f/gzs3u2midcSLPOeKK6yJXmR4yYxHgP5kw6N8BCKcnF9GjVvQ"
+              src="https://utfs.io/f/gzs3u2midcSLuMkbZ1WOWwrxsTXIb761HcjvGLko2helnA3z"
             />
           </div>
         </div>

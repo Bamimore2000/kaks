@@ -75,10 +75,8 @@ const Footer = () => {
             <OurServices />
           </div>
         </div>
-        <div className="other-info flex justify-between text-[#A8A8A8] max-w-[1300px] mx-auto w-[98%] mt-5 text-xs">
+        <div className="other-info  text-[#A8A8A8] max-w-[1300px] mx-auto w-[98%] mt-5 text-xs">
           <h5>Kaks &copy; 2024</h5>
-          <h5>Based in Nigeria</h5>
-          <h5>@Femidesigns</h5>
         </div>
       </div>
     </footer>
