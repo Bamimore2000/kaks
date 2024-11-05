@@ -97,7 +97,7 @@ const About = () => {
           {/* <ConnectBtn className="mt-2 hidden md:block" /> */}
         </div>
         <div className="image-container w-full hidden md:flex md:justify-end ">
-          <div className="max-w-[500px]  w-full h-[400px]">
+          <div className="max-w-[550px]  w-full h-[450px]">
             <Image
               height={500}
               width={500}
