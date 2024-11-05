@@ -3,7 +3,7 @@ import ContactCards from "./ContactCards";
 
 const Contact = () => {
   return (
-    <section className="py-10 border-none  bg-[#141414]">
+    <section id="Contact" className="py-10 border-none  bg-[#141414]">
       <div className="content-wrapper mx-auto border-none w-[92%] max-w-[1300px]">
         <div className="contact-text mb-10">
           <h2 className="section-header text-[#FDFDFD]">Contact</h2>

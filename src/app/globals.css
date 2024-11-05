@@ -8,6 +8,9 @@
   outline: solid #f00 1px !important;
 } */
 
+html {
+  scroll-padding-top: 80px;
+}
 /* body,
 html {
   width: 100%;
