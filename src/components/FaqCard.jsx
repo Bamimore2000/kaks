@@ -26,7 +26,7 @@ const FaqCard = ({ question, answer, setCurrent, current, index }) => {
       </div>
       <div className="underline"></div>
       <div
-        className={`content text-left text-xs text-[#CBCBCB]  leading-5 tracking-wide transition-all duration-300 ${
+        className={`content text-left text-[14px] md:text-base text-[#CBCBCB]  leading-5 tracking-wide transition-all duration-300 ${
           index === current
             ? "max-h-screen opacity-100 mt-3"
             : "max-h-0 opacity-0 overflow-hidden"

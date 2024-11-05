@@ -2301,42 +2301,43 @@ export const testimonials = [
     name: "Lagos Country Club",
     role: "Director",
     comment:
-      "I was hesitant to try KAKS, but after using it, I'm a believer. It's made a huge difference in my life and I'm so grateful.",
+      "We were initially hesitant to try KAKS, but their services have exceeded our expectations. Working with them has been a seamless experience, and we've seen incredible improvements in our operations.",
   },
   {
     name: "Wemy Industries",
     role: "Director",
-    comment: "Working with the company was a game-changer for me.",
+    comment:
+      "Partnering with KAKS has been transformative for our business. Their team is highly professional and consistently delivers exceptional service, helping us achieve our goals faster.",
   },
   {
     name: "Yaba Local Government Council",
     role: "Sales Rep",
     comment:
-      "I had an amazing experience working with KAKS. Their team was knowledgeable, professional, and truly cared about my needs. I highly recommend their services to anyone looking for top-notch support.",
+      "Our experience with KAKS has been fantastic. Their team is knowledgeable, attentive, and genuinely committed to our needs. We highly recommend their services for any organization looking for reliable support.",
   },
   {
     name: "Lagos State Ministry of Health",
     role: "CEO",
     comment:
-      "I was struggling to grow the ministry until I found . This software made everything so much easier and streamlined, and I'm now seeing significant growth and success. Thank you KAKS.",
+      "We were facing challenges in streamlining our processes until we started working with KAKS. Their services have brought efficiency to our operations, and we've seen substantial improvements across the board. Thank you, KAKS!",
   },
   {
     name: "The Place",
     role: "CEO",
     comment:
-      "I had the pleasure of working with KAKS on a project, and I was impressed by their creativity, innovation, and dedication to quality.",
+      "Collaborating with KAKS on our latest project was a pleasure. Their creativity, innovation, and commitment to quality are impressive, and we look forward to more projects together.",
   },
   {
     name: "KAKS WATER",
     role: "Director",
     comment:
-      "I was blown away by the quality of KAKS. It exceeded my expectations in every way. and I'm now a loyal customer for life..",
+      "The quality of service from KAKS has been exceptional. They’ve consistently gone above and beyond, making them a trusted partner for our team.",
   },
   {
-    name: "Dangote Sino Truck",
+    name: "Dangote Sino Truk",
     role: "Director",
     comment:
-      "I've worked with KAKS for years, and they have never let me down. Their expertise, professionalism, and attention to detail are second to none, and I'm so grateful for their support.",
+      "We’ve worked with KAKS for years, and they always deliver. Their expertise, professionalism, and attention to detail are unmatched. We’re grateful for the consistent support they provide.",
   },
 ];
 
