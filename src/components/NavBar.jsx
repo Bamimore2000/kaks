@@ -28,9 +28,9 @@ const NavBar = () => {
           backgroundColor: isOpen ? "#F5F5F5F5" : "white",
           transition: "all 500ms ease",
         }}
-        className="container relative rounded-t-md px-2 flex justify-between md:justify-center items-center  mx-auto max-w-[1300px] w-[95%]  "
+        className="container relative rounded-t-md flex justify-between md:justify-center items-center  mx-auto max-w-[1300px] w-[92%]  "
       >
-        <div className="logo relativehttps://www.figma.com/design/9P6uk13PszHeyQZWhxT65s/Untitled-(Copy)-(Copy)?node-id=0-1&node-type=canvashttps://www.figma.com/design/9P6uk13PszHeyQZWhxT65s/Untitled-(Copy)-(Copy)?node-id=0-1&node-type=canvas md:absolute md:left-0  flex justify-between gap-2 items-center">
+        <div className="logo relative  md:absolute md:left-0  flex justify-between gap-2 items-center">
           {/* TODO: KAKS LOGO MUST BE HERE */}
           <div className="logo relative h-[40px] w-[40px]">
             <Image
