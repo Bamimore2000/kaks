@@ -2406,7 +2406,7 @@ export const socialLinks = [
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/kaksprojects/profilecard/?igsh=dGRhY2pyNnloc2ts",
+    link: "https://www.instagram.com/kaksprojects",
   },
   {
     name: "LinkedIn",
