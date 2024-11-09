@@ -55,7 +55,7 @@ export const connect = [
     icon: <BsTelephone />,
   },
   {
-    href: "https://www.instagram.com/oladipupoarikawe/profilecard/?igsh=MzRrbHp2a3gzdDgx",
+    href: "https://www.instagram.com/oladipupoarikawe",
     target: "_blank",
     text: "Instagram",
     icon: <FaInstagram />,
@@ -2398,7 +2398,7 @@ export const faq = [
 export const socialLinks = [
   {
     name: "Facebook",
-    link: "https://facebook.com/yourpage",
+    link: "https://www.facebook.com/share/1AaubmY9Ta/?mibextid=LQQJ4d",
   },
   {
     name: "WhatsApp",
@@ -2410,7 +2410,7 @@ export const socialLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/oladipupo-arikawe-661540196?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    link: "https://www.linkedin.com/in/oladipupo-arikawe-661540196",
   },
 ];
 
