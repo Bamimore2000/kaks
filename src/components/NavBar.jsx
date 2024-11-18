@@ -27,7 +27,7 @@ const NavBar = () => {
         const currentScrollPos = window.scrollY;
 
         // Ignore small scroll movements to reduce sensitivity
-        if (Math.abs(currentScrollPos - lastScrollPos) < 15) return;
+        if (Math.abs(currentScrollPos - lastScrollPos) < 30) return;
 
         // Determine scrolling direction
         if (currentScrollPos > lastScrollPos) {
