@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 import ConnectBtn from "./ConnectBtn";
 import { aboutImages } from "../app/lib/data";
 import AboutCarousel from "./AboutCarousel";
-import Testimonials from "../../Testimonials";
+import Testimonials from "./Testimonials";
 const About = () => {
   const OPTIONS = { loop: true };
   return (
