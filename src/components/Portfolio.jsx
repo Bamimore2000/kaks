@@ -23,7 +23,7 @@ const Portfolio = () => {
       className="section-main py-8 bg-[#141414] text-white"
     >
       <p className="text-center mt-4 text-[#CECECE] text-[10px] font-mono">
-        A few collection of our works
+        Few collection of our works
       </p>
 
       <h2 className="section-header py-3">Portfolio</h2>
