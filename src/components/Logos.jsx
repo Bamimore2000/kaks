@@ -11,7 +11,7 @@ const Logos = () => {
         <div className="images mb-5 md:hidden">
           <img
             className="mx-auto w-full cursor-pointer"
-            src="https://utfs.io/f/gzs3u2midcSLDvlSwX2UfYUEoHQBvSdjZkyT1g59F7Oa8Gsp"
+            src="https://utfs.io/f/gzs3u2midcSLDcGd9gUfYUEoHQBvSdjZkyT1g59F7Oa8Gsph"
             alt="logo images"
           />
         </div>

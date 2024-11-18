@@ -7,7 +7,7 @@ import NavMenu from "./NavMenu";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrollingUp, setIsScrollingUp] = useState(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
   const [lastScrollPos, setLastScrollPos] = useState(0);
 
   useEffect(() => {
