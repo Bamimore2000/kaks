@@ -9,28 +9,58 @@ import NavMenu from "./NavMenu";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [lastScrollPos, setLastScrollPos] = useState(0);
+
   useEffect(() => {
+    // Lock body scroll when menu is open
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "visible";
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        const currentScrollPos = window.scrollY;
+        if (currentScrollPos > lastScrollPos) {
+          // Scrolling down
+          setIsScrollingUp(false);
+        } else {
+          // Scrolling up
+          setIsScrollingUp(true);
+        }
+        setLastScrollPos(currentScrollPos);
+      };
+      console.log(isScrollingUp);
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [lastScrollPos]);
+
   return (
     <nav
       style={{
         transition: "all 500ms ease",
+        transform: !isScrollingUp ? "translateY(0)" : "translateY(-100%)",
       }}
-      className="fixed nav-bar shadow-sm shadow-black/20 z-30 top-0  left-0 w-full right-0 bg-white h-[80px] flex justify-between"
+      className="fixed nav-bar shadow-sm shadow-black/20 z-30 top-0 left-0 w-full right-0 bg-white h-[80px] flex justify-between"
     >
       <div
         style={{
           backgroundColor: isOpen ? "#F5F5F5F5" : "white",
           transition: "all 500ms ease",
+          padding: isOpen ? "0 12px" : "",
         }}
-        className="container relative rounded-t-md flex justify-between md:justify-center items-center  mx-auto max-w-[1300px] w-[92%]  "
+        className="container relative rounded-t-md flex justify-between md:justify-center items-center mx-auto max-w-[1300px] w-[92%]"
       >
-        <div className="logo relative  md:absolute md:left-0  flex justify-between gap-2 items-center">
+        <div className="logo relative md:absolute md:left-0 flex justify-between gap-2 items-center">
           {/* TODO: KAKS LOGO MUST BE HERE */}
           <div className="logo relative h-[40px] w-[40px]">
             <Image
@@ -43,10 +73,6 @@ const NavBar = () => {
         </div>
         <Links />
         <div className="book-hamburger flex justify-between gap-5 items-center">
-          {/* {!isOpen && (
-            <Book className={"transition-all text-white text-[13px]"} />
-          )} */}
-
           <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         {isOpen && (
@@ -58,4 +84,5 @@ const NavBar = () => {
     </nav>
   );
 };
+
 export default NavBar;

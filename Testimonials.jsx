@@ -1,5 +1,5 @@
 import { testimonials } from "@/app/lib/data";
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "./src/components/TestimonialCard";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useState, useEffect } from "react";
 

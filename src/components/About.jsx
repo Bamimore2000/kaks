@@ -5,20 +5,20 @@ import { twMerge } from "tailwind-merge";
 import ConnectBtn from "./ConnectBtn";
 import { aboutImages } from "../app/lib/data";
 import AboutCarousel from "./AboutCarousel";
-import Testimonials from "./Testimonials";
+import Testimonials from "../../Testimonials";
 const About = () => {
   const OPTIONS = { loop: true };
   return (
     <section id="About" className="section-name py-12 bg-[#141414]">
       <div className="first-description w-[92%] max-w-[1300px] mx-auto">
-        <h3
+        {/* <h3
           style={{
             textAlign: "left",
           }}
           className="my-6 text-[#FDFDFD] text-[16px] font-mono"
         >
           About
-        </h3>
+        </h3> */}
       </div>
       <div className="items-text flex flex-col md:flex-row w-[92%] max-w-[1300px] mx-auto">
         <div className="text">

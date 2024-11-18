@@ -11,7 +11,7 @@ const Logos = () => {
         <div className="images mb-5 md:hidden">
           <img
             className="mx-auto w-full cursor-pointer"
-            src="https://utfs.io/f/gzs3u2midcSL13OI63G6DvjEqpHYlwZsW23XgLMkVaN5SxcQ"
+            src="https://utfs.io/f/gzs3u2midcSLDvlSwX2UfYUEoHQBvSdjZkyT1g59F7Oa8Gsp"
             alt="logo images"
           />
         </div>
@@ -19,7 +19,7 @@ const Logos = () => {
           <div className="image-wrapper">
             <img
               className="cursor-pointer"
-              src="https://utfs.io/f/gzs3u2midcSLLTWf9KqIfZ67DX0sJPwk94VvgGxhoCbntcmz"
+              src="https://utfs.io/f/gzs3u2midcSLDvlSwX2UfYUEoHQBvSdjZkyT1g59F7Oa8Gsp"
               alt="logo-images"
             />
           </div>
