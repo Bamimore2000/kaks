@@ -2266,33 +2266,34 @@ export const heroImages = [
 export const abouts = [
   {
     icon: "https://utfs.io/f/gzs3u2midcSLWl8pxhZKdfILRgQSYXFlTsNwpk7oGjiu5bBC",
-    heading: "Construction",
+    heading: "Constructing",
     details:
-      "As a comprehensive Contractor firm, we manage all phases of the construction journey, from initial planning to final inspections.",
+      " As a comprehensive constructor , we conceptualize design and execute all phases of any construction project from planning to delivery .",
   },
   {
     icon: "https://utfs.io/f/gzs3u2midcSLWwJKJhZKdfILRgQSYXFlTsNwpk7oGjiu5bBC",
-    heading: "General Contractor",
+    heading: "Contracting",
     details:
-      "We specialize in aligning products and solutions with client needs while also providing expert guidance and professional advice.",
+      " As a contractor we specialize in client specific project and aligned expertise solutions on civil, industrial, residential and commercial projects.",
+  },
+
+  {
+    icon: "https://utfs.io/f/gzs3u2midcSLlDqfAJHUDT3uwgtikvflObzcPj2xA40pYCmd",
+    heading: "Consulting",
+    details:
+      "We excel in real estate aligning property solutions, ensuring that our offerings meet specific needs while providing real estate property counsel",
   },
   {
     icon: "https://utfs.io/f/gzs3u2midcSLdcUhsHnNQqBCIr3tg9U2fe1LpvHZnbTNAiOw",
     heading: "Water Engineering",
     details:
-      "We provide crucial water infrastructure services such as treatment facilities, pipeline systems, and irrigation, focusing on sustainable management.",
-  },
-  {
-    icon: "https://utfs.io/f/gzs3u2midcSLlDqfAJHUDT3uwgtikvflObzcPj2xA40pYCmd",
-    heading: "Real Estate Consultant",
-    details:
-      "We excel in aligning property solutions with client requirements, ensuring that our offerings meet specific needs while providing expert counsel.",
+      "We provide crucial water infrastructure services such as treatment facilities, pipeline systems, and irrigation, focusing on sustainable management",
   },
   {
     icon: "https://utfs.io/f/gzs3u2midcSL00UiyCMpb9DUFgxEW2aznsKtmv3YruQky4Zw",
     heading: "Project Management",
     details:
-      "We deliver comprehensive project management services that encompass planning, scheduling, and resource allocation, minimizing risks and optimizing budgets.",
+      "We deliver comprehensive project management services that encompass planning, scheduling, and resource allocation, minimizing risks and optimizing budgets.",
   },
 ];
 

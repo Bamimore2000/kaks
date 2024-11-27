@@ -27,9 +27,8 @@ const About = () => {
             <br className="hidden md:block" /> about?
           </h4>
           <p className="text-[#DEDEDE] text-[14px] font-medium md:mt-3 mt-2 tracking-tight">
-            At Kaks, we build with purpose and precision. As experts in general
-            contracting, construction, water engineering, and real estate
-            consulting.
+            We execute with purpose and precision as expert in constructing,
+            contracting & consulting
           </p>
         </div>
         <div className="information">

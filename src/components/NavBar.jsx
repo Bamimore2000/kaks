@@ -59,7 +59,7 @@ const NavBar = () => {
     <nav
       style={{
         transition: "transform 500ms ease",
-        transform: !isScrollingUp ? "translateY(0)" : "translateY(-100%)",
+        transform: isScrollingUp ? "translateY(0)" : "translateY(-100%)",
       }}
       className="fixed nav-bar shadow-sm shadow-black/20 z-30 top-0 left-0 w-full bg-white h-[80px] flex justify-between"
     >

@@ -83,11 +83,6 @@ const BottomSheet = ({ children, height }) => {
                 className="header grid place-items-center w-full h-6 cursor-grab absolute top-0 left-0 rounded-t-xl bg-white touch-none active:cursor-grabbing"
               >
                 <div className="h-[6px] bg-[#C1C1C1] w-12 rounded-full"></div>
-                {/* <LiaTimesSolid
-                  onClick={() => handleClose()}
-                  className="absolute right-3 top-3"
-                  size={25}
-                /> */}
               </motion.div>
               <div className="overflow-y-scroll h-full">{children}</div>
             </motion.div>
