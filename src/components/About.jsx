@@ -23,8 +23,8 @@ const About = () => {
       <div className="items-text flex flex-col md:flex-row w-[92%] max-w-[1300px] mx-auto">
         <div className="text">
           <h4 className="font-semibold text-2xl text-[#FDFDFD] leading-6 xmd:text-3xl">
-            What are <br className="md:hidden" /> we all{" "}
-            <br className="hidden md:block" /> about?
+            What we <br className="md:hidden" /> are all{" "}
+            <br className="hidden md:block" /> about
           </h4>
           <p className="text-[#DEDEDE] text-[14px] font-medium md:mt-3 mt-2 tracking-tight">
             We execute with purpose and precision as expert in constructing,
